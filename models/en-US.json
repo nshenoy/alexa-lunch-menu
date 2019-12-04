@@ -7,6 +7,15 @@
                     "name": "LunchAMPTodayIntent",
                     "slots": [],
                     "samples": [
+                        "what's for lunch at a.m.p. today",
+                        "what's for lunch at a.m.p.",
+                        "what does waverly have for lunch today",
+                        "what does waverly have for lunch",
+                        "what lunch does waverly have today",
+                        "what's for waverly's lunch",
+                        "what's for waverly's lunch today",
+                        "what's waverly's lunch",
+                        "what's waverly's lunch today",
                         "what's for lunch today at A M P"
                     ]
                 },
@@ -14,6 +23,11 @@
                     "name": "LunchAMPTomorrowIntent",
                     "slots": [],
                     "samples": [
+                        "what's for lunch tomorrow at a.m.p.",
+                        "what's for waverly's lunch tomorrow",
+                        "what lunch does waverly have tomorrow",
+                        "what does waverly have for lunch tomorrow",
+                        "what's waverly's lunch tomorrow",
                         "what's for lunch tomorrow at A M P"
                     ]
                 },
@@ -32,6 +46,29 @@
                     ]
                 },
                 {
+                    "name": "LunchTodayIntent",
+                    "slots": [],
+                    "samples": [
+                        "what's for lunch today",
+                        "what's for lunch",
+                        "what lunch is today",
+                        "what's for lunch today at school",
+                        "what's for school lunch today",
+                        "what's for school lunch"
+                    ]
+                },
+                {
+                    "name": "LunchTomorrowIntent",
+                    "slots": [],
+                    "samples": [
+                        "what's for lunch tomorrow",
+                        "what's tomorrow's lunch",
+                        "what lunch is tomorrow",
+                        "what's for lunch tomorrow at school",
+                        "what's for school lunch tomorrow"
+                    ]
+                },
+                {
                     "name": "AMAZON.CancelIntent",
                     "samples": []
                 },
@@ -41,6 +78,10 @@
                 },
                 {
                     "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
                     "samples": []
                 }
             ],
