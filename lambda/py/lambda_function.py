@@ -40,6 +40,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         logger.info("In LaunchRequestHandler")
+        logger.info(handler_input.attributes_manager.request_attributes)
         _ = handler_input.attributes_manager.request_attributes["_"]
 
         # logger.info(_("This is an untranslated message"))
@@ -65,8 +66,7 @@ class AboutIntentHandler(AbstractRequestHandler):
 
         handler_input.response_builder.speak(_(data.ABOUT))
         return handler_input.response_builder.response
-
-
+        
 class LunchAMPTodayIntentHandler(AbstractRequestHandler):
     """Handler for Lunch AMP Today intent."""
     def can_handle(self, handler_input):
@@ -221,34 +221,6 @@ class ExitIntentHandler(AbstractRequestHandler):
         return handler_input.response_builder.response
 
 
-class FallbackIntentHandler(AbstractRequestHandler):
-    """Handler for handling fallback intent or Yes/No without
-    restaurant info intent.
-
-     2018-May-01: AMAZON.FallackIntent is only currently available in
-     en-US locale. This handler will not be triggered except in that
-     locale, so it can be safely deployed for any locale."""
-    def can_handle(self, handler_input):
-        # type: (HandlerInput) -> bool
-        session_attr = handler_input.attributes_manager.session_attributes
-        return (is_intent_name("AMAZON.FallbackIntent")(handler_input) or
-                ("restaurant" not in session_attr and (
-                    is_intent_name("AMAZON.YesIntent")(handler_input) or
-                    is_intent_name("AMAZON.NoIntent")(handler_input))
-                 ))
-
-    def handle(self, handler_input):
-        # type: (HandlerInput) -> Response
-        logger.info("In FallbackIntentHandler")
-        _ = handler_input.attributes_manager.request_attributes["_"]
-
-        handler_input.response_builder.speak(_(
-            data.FALLBACK).format(data.SKILL_NAME)).ask(_(
-            data.FALLBACK).format(data.SKILL_NAME))
-
-        return handler_input.response_builder.response
-
-
 # Exception Handler classes
 class CatchAllExceptionHandler(AbstractExceptionHandler):
     """Catch All Exception handler.
@@ -270,22 +242,33 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
 
         return handler_input.response_builder.response
 
+class LocalizationInterceptor(AbstractRequestInterceptor):
+    """Add function to request attributes, that can load locale specific data."""
+    def process(self, handler_input):
+        # type: (HandlerInput) -> None
+        locale = handler_input.request_envelope.request.locale
+        logger.info("Locale is {}".format(locale))
+        i18n = gettext.translation(
+            'base', localedir='locales', languages=[locale], fallback=True)
+        handler_input.attributes_manager.request_attributes[
+            "_"] = i18n.gettext
 
 # Add all request handlers to the skill.
 sb.add_request_handler(LaunchRequestHandler())
 sb.add_request_handler(AboutIntentHandler())
 sb.add_request_handler(LunchAMPTodayIntentHandler())
 sb.add_request_handler(LunchAMPTomorrowIntentHandler())
-sb.add_request_handler(LunchNiddleSchoolTodayIntentHandler())
+sb.add_request_handler(LunchMiddleSchoolTodayIntentHandler())
 sb.add_request_handler(LunchMiddleSchoolTomorrowIntentHandler())
-sb.add_request_handler(NoMoreInfoIntentHandler())
 sb.add_request_handler(HelpIntentHandler())
-sb.add_request_handler(FallbackIntentHandler())
 sb.add_request_handler(ExitIntentHandler())
 sb.add_request_handler(SessionEndedRequestHandler())
 
 # Add exception handler to the skill.
 sb.add_exception_handler(CatchAllExceptionHandler())
+
+# Add locale interceptor to the skill.
+sb.add_global_request_interceptor(LocalizationInterceptor())
 
 # Expose the lambda handler to register in AWS Lambda.
 lambda_handler = sb.lambda_handler()

@@ -5,9 +5,9 @@ from gettext import gettext as _
 
 SKILL_NAME = "Locust Valley Lunch Menu"
 
-WELCOME = _("Welcome to the Locust Valley Lunch Menu")
-HELP = _("Say about, to hear more about the skill, or what's for lunch at AMP or Middle School today or tomorrow ")
-ABOUT = _("I'll tell you what's for lunch today or tomorrow at AMP or Middle School")
+WELCOME = _("Welcome to the Locust Valley Lunch Menu.")
+HELP = _("Say about, to hear more about the skill, or what's for lunch at AMP or Middle School today or tomorrow.")
+ABOUT = _("I'll tell you what's for lunch today or tomorrow at AMP or Middle School.")
 STOP = _("Okay, see you next time!")
 FALLBACK = _("The {} can't help you with that.")
 GENERIC_REPROMPT = _("What can I help you with?")
