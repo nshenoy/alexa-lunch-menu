@@ -1,69 +1,50 @@
 {
-  "interactionModel": {
-    "languageModel": {
-      "invocationName": "lunch menu",
-      "intents": [
-        {
-          "name": "AboutIntent",
-          "samples": [
-            "about"
-          ],
-          "slots": []
-        },
-        {
-          "name": "LunchAMPTodayIntent",
-          "samples": [
-            "what's for lunch today at A M P"
-          ],
-          "slots": []
-        },
-        {
-          "name": "LunchAMPTomorrowIntent",
-          "samples": [
-            "what's for lunch tomorrow at A M P"
-          ],
-          "slots": []
-        },
-        {
-          "name": "LunchMiddleSchoolTodayIntent",
-          "samples": [
-            "what's for lunch today at middle school"
-          ],
-          "slots": []
-        },
-        {
-          "name": "LunchMiddleSchoolTomorrowIntent",
-          "samples": [
-            "what's for lunch tomorrow at middle school"
-          ],
-          "slots": []
-        },
-        {
-          "name": "AMAZON.YesIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.NoIntent",
-          "samples": []
-        },
-
-        {
-          "name": "AMAZON.HelpIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.StopIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.CancelIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.FallbackIntent",
-          "samples": []
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "lunch menu",
+            "intents": [
+                {
+                    "name": "LunchAMPTodayIntent",
+                    "slots": [],
+                    "samples": [
+                        "what's for lunch today at A M P"
+                    ]
+                },
+                {
+                    "name": "LunchAMPTomorrowIntent",
+                    "slots": [],
+                    "samples": [
+                        "what's for lunch tomorrow at A M P"
+                    ]
+                },
+                {
+                    "name": "LunchMiddleSchoolTodayIntent",
+                    "slots": [],
+                    "samples": [
+                        "what's for lunch today at middle school"
+                    ]
+                },
+                {
+                    "name": "LunchMiddleSchoolTomorrowIntent",
+                    "slots": [],
+                    "samples": [
+                        "what's for lunch tomorrow at middle school"
+                    ]
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                }
+            ],
+            "types": []
         }
-      ]
     }
-  }
 }
