@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "lunch menu",
+            "invocationName": "lv lunch menu",
             "intents": [
                 {
                     "name": "LunchAMPTodayIntent",
