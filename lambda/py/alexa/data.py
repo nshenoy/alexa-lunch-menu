@@ -74,4 +74,65 @@ LUNCHMENU_DATA_AMP = [
         "item": "Pizza Sticks"
     }
 ]
-LUNCHMENU_DATA_MIDDLESCHOOL = []
+LUNCHMENU_DATA_MIDDLESCHOOL = [
+    {
+        "date": "2019-12-02",
+        "item": "Mozzarella Sticks with Marinara Sauce"
+    },
+    {
+        "date": "2019-12-03",
+        "item": "Beef & Bean Burrito"
+    },
+    {
+        "date": "2019-12-04",
+        "item": "Pasta with Meatballs"
+    },
+    {
+        "date": "2019-12-05",
+        "item": "Chicken Nuggets"
+    },
+    {
+        "date": "2019-12-06",
+        "item": "Pizza Cheese Crunchers"
+    },
+    {
+        "date": "2019-12-09",
+        "item": "Maple Glazed French Toast Sticks"
+    },
+    {
+        "date": "2019-12-10",
+        "item": "Grilled Cheese Sandwich"
+    },
+    {
+        "date": "2019-12-11",
+        "item": "Hamburger or Cheeseburger or Veggie Burger on a Bun"
+    },
+    {
+        "date": "2019-12-12",
+        "item": "Chicken Tenders"
+    },
+    {
+        "date": "2019-12-13",
+        "item": "Pizza Slice"
+    },
+    {
+        "date": "2019-12-16",
+        "item": "Egg & Cheese Sandwich on a Bun"
+    },
+    {
+        "date": "2019-12-17",
+        "item": "Cheese Ravioli or Lasagna Roll Up"
+    },
+    {
+        "date": "2019-12-18",
+        "item": "Mozzarella Sticks with Marinara Sauce"
+    },
+    {
+        "date": "2019-12-19",
+        "item": "Popcorn Chicken"
+    },
+    {
+        "date": "2019-12-20",
+        "item": "Pizza Sticks"
+    }
+]
