@@ -4,6 +4,7 @@ import requests
 from ask_sdk_model import IntentRequest
 from typing import Union, Dict, List
 from datetime import datetime, timedelta
+from pytz import timezone
 
 def get_lunch(lunch_data, menuDate):
     searchDate = menuDate.strftime("%Y-%m-%d")
@@ -17,12 +18,14 @@ def get_lunch(lunch_data, menuDate):
         return {"item": "NOTHING because it is the weekend!"}        
 
 def get_lunch_for_today(lunch_data):
-    calcDate = datetime.today()
-    return get_lunch(lunch_data, calcDate)
+    todayUtc = datetime.now(timezone('UTC'))
+    today = todayUtc.astimezone(timezone('US/Eastern'))
+    return get_lunch(lunch_data, today)
 
 def get_lunch_for_tomorrow(lunch_data):
-    calcDate = (datetime.today() + timedelta(days=1))
-    return get_lunch(lunch_data, calcDate)
+    tomorrowUtc = (datetime.now(timezone('UTC')) + timedelta(days=1))
+    tomorrow = tomorrowUtc.astimezone(timezone('US/Eastern'))
+    return get_lunch(lunch_data, tomorrow)
 
 def get_resolved_value(request, slot_name):
     """Resolve the slot name from the request."""
