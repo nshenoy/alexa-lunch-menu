@@ -55,7 +55,7 @@ LUNCHMENU_DATA_AMP = [
     },
     {
         "date": "2019-12-16",
-        "item": "Egg & Cheese Sandwich on a Bun"
+        "item": "Egg and Cheese Sandwich on a Bun"
     },
     {
         "date": "2019-12-17",
@@ -81,7 +81,7 @@ LUNCHMENU_DATA_MIDDLESCHOOL = [
     },
     {
         "date": "2019-12-03",
-        "item": "Beef & Bean Burrito"
+        "item": "Beef and Bean Burrito"
     },
     {
         "date": "2019-12-04",
@@ -117,7 +117,7 @@ LUNCHMENU_DATA_MIDDLESCHOOL = [
     },
     {
         "date": "2019-12-16",
-        "item": "Egg & Cheese Sandwich on a Bun"
+        "item": "Egg and Cheese Sandwich on a Bun"
     },
     {
         "date": "2019-12-17",

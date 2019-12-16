@@ -19,7 +19,7 @@ def convertMenuToJson(menuFile, jsonFile):
     # read in the contents of the menu txt file
     with open(menuFile) as f_in:
         menuContents = (line.rstrip() for line in f_in) 
-        menuContents = list(line for line in menuContents if line) 
+        menuContents = list(line.replace("&", "and") for line in menuContents if line) 
     
     # parse the contents to create a list of dictionaries
     menuByDate = []
