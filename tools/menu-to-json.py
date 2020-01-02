@@ -25,7 +25,7 @@ def convertMenuToJson(menuFile, jsonFile):
     menuByDate = []
     for i in range(len(menuContents)):
         try:
-            menuByDate.append({"date": datetime.strptime(menuContents[i],"%A, %B %d").date().strftime("2019-%m-%d"), "item": menuContents[i+1]})
+            menuByDate.append({"date": datetime.strptime(menuContents[i],"%A, %B %d").date().strftime("2020-%m-%d"), "item": menuContents[i+1]})
         except:
             continue
 
@@ -41,6 +41,8 @@ def getLunchByDate(jsonFile, menuDate):
         searchDate = datetime.today().strftime("%Y-%m-%d")
     else:
         searchDate = (datetime.today() + timedelta(days=1)).strftime("%Y-%m-%d")
+
+    print(searchDate)
 
     with open(jsonFile, "r") as jsonFile:
         lunchItems = json.load(jsonFile)

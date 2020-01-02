@@ -67,45 +67,45 @@ class AboutIntentHandler(AbstractRequestHandler):
         handler_input.response_builder.speak(_(data.ABOUT))
         return handler_input.response_builder.response
         
-class LunchAMPTodayIntentHandler(AbstractRequestHandler):
-    """Handler for Lunch AMP Today intent."""
+class LunchElementaryTodayIntentHandler(AbstractRequestHandler):
+    """Handler for Lunch Elementary Today intent."""
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
-        return is_intent_name("LunchAMPTodayIntent")(handler_input)
+        return is_intent_name("LunchElementaryTodayIntent")(handler_input)
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        logger.info("In LunchAMPTodayIntentHandler")
+        logger.info("In LunchElementaryTodayIntentHandler")
 
         attribute_manager = handler_input.attributes_manager
         session_attr = attribute_manager.session_attributes
 
-        lunchItem = util.get_lunch_for_today(data.LUNCHMENU_DATA_AMP)
+        lunchItem = util.get_lunch_for_today(data.LUNCHMENU_DATA_ELEMENTARY)
 
         session_attr["lunchItem"] = lunchItem["item"]
-        speech = ("Today's lunch at AMP is {}.").format(lunchItem["item"])
+        speech = ("Today's lunch in elementary is {}.").format(lunchItem["item"])
 
         handler_input.response_builder.speak(speech)
         return handler_input.response_builder.response
 
 
-class LunchAMPTomorrowIntentHandler(AbstractRequestHandler):
-    """Handler for Lunch AMP Tomorrow intent."""
+class LunchElementaryTomorrowIntentHandler(AbstractRequestHandler):
+    """Handler for Lunch Elementary Tomorrow intent."""
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
-        return is_intent_name("LunchAMPTomorrowIntent")(handler_input)
+        return is_intent_name("LunchElementaryTomorrowIntent")(handler_input)
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        logger.info("In LunchAMPTomorrowIntentHandler")
+        logger.info("In LunchElementaryTomorrowIntentHandler")
 
         attribute_manager = handler_input.attributes_manager
         session_attr = attribute_manager.session_attributes
 
-        lunchItem = util.get_lunch_for_tomorrow(data.LUNCHMENU_DATA_AMP)
+        lunchItem = util.get_lunch_for_tomorrow(data.LUNCHMENU_DATA_ELEMENTARY)
 
         session_attr["lunchItem"] = lunchItem["item"]
-        speech = ("Tomorrow's lunch at AMP is {}.").format(lunchItem["item"])
+        speech = ("Tomorrow's lunch in elementary is {}.").format(lunchItem["item"])
 
         handler_input.response_builder.speak(speech)
         return handler_input.response_builder.response
@@ -168,15 +168,15 @@ class LunchTodayIntentHandler(AbstractRequestHandler):
         attribute_manager = handler_input.attributes_manager
         session_attr = attribute_manager.session_attributes
 
-        lunchItemAmp = util.get_lunch_for_today(data.LUNCHMENU_DATA_AMP)
+        lunchItemElementary = util.get_lunch_for_today(data.LUNCHMENU_DATA_ELEMENTARY)
         lunchItemMiddleSchool = util.get_lunch_for_today(data.LUNCHMENU_DATA_MIDDLESCHOOL)
 
-        if lunchItemAmp == lunchItemMiddleSchool:
-            speech = ("Today's lunch at both schools are the same: {}").format(lunchItemAmp["item"])
+        if lunchItemElementary == lunchItemMiddleSchool:
+            speech = ("Today's lunch at both schools are the same: {}").format(lunchItemElementary["item"])
         else:
-            speech = ("Today's lunch at AMP is {}, and at Middle School it is {}.").format(lunchItemAmp["item"], lunchItemMiddleSchool["item"])
+            speech = ("Today's lunch in elementary is {}, and at Middle School it is {}.").format(lunchItemElementary["item"], lunchItemMiddleSchool["item"])
 
-        session_attr["lunchItemAmp"] = lunchItemAmp["item"]
+        session_attr["lunchItemElementary"] = lunchItemElementary["item"]
         session_attr["lunchItemMiddleSchool"] = lunchItemMiddleSchool["item"]
 
         handler_input.response_builder.speak(speech)
@@ -196,15 +196,15 @@ class LunchTomorrowIntentHandler(AbstractRequestHandler):
         attribute_manager = handler_input.attributes_manager
         session_attr = attribute_manager.session_attributes
 
-        lunchItemAmp = util.get_lunch_for_tomorrow(data.LUNCHMENU_DATA_AMP)
+        lunchItemElementary = util.get_lunch_for_tomorrow(data.LUNCHMENU_DATA_ELEMENTARY)
         lunchItemMiddleSchool = util.get_lunch_for_tomorrow(data.LUNCHMENU_DATA_MIDDLESCHOOL)
 
-        if lunchItemAmp == lunchItemMiddleSchool:
-            speech = ("Tomorrow's lunch at both schools are the same: {}").format(lunchItemAmp["item"])
+        if lunchItemElementary == lunchItemMiddleSchool:
+            speech = ("Tomorrow's lunch at both schools are the same: {}").format(lunchItemElementary["item"])
         else:
-            speech = ("Tomorrow's lunch at AMP is {}, and at Middle School it is {}.").format(lunchItemAmp["item"], lunchItemMiddleSchool["item"])
+            speech = ("Tomorrow's lunch in elementary is {}, and at Middle School it is {}.").format(lunchItemElementary["item"], lunchItemMiddleSchool["item"])
 
-        session_attr["lunchItemAmp"] = lunchItemAmp["item"]
+        session_attr["lunchItemElementary"] = lunchItemElementary["item"]
         session_attr["lunchItemMiddleSchool"] = lunchItemMiddleSchool["item"]
 
         handler_input.response_builder.speak(speech)
@@ -314,8 +314,8 @@ sb.add_request_handler(LaunchRequestHandler())
 sb.add_request_handler(AboutIntentHandler())
 sb.add_request_handler(LunchTodayIntentHandler())
 sb.add_request_handler(LunchTomorrowIntentHandler())
-sb.add_request_handler(LunchAMPTodayIntentHandler())
-sb.add_request_handler(LunchAMPTomorrowIntentHandler())
+sb.add_request_handler(LunchElementaryTodayIntentHandler())
+sb.add_request_handler(LunchElementaryTomorrowIntentHandler())
 sb.add_request_handler(LunchMiddleSchoolTodayIntentHandler())
 sb.add_request_handler(LunchMiddleSchoolTomorrowIntentHandler())
 sb.add_request_handler(HelpIntentHandler())

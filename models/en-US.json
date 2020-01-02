@@ -4,11 +4,27 @@
             "invocationName": "lv lunch menu",
             "intents": [
                 {
-                    "name": "LunchAMPTodayIntent",
+                    "name": "LunchElementaryTodayIntent",
                     "slots": [],
                     "samples": [
+                        "what's for lunch at elementary today",
+                        "what's for lunch at elementary",
+                        "what's for lunch in elementary today",
+                        "what's for lunch in elementary",
                         "what's for lunch at a.m.p. today",
                         "what's for lunch at a.m.p.",
+                        "what's for lunch at Ann McArthur today",
+                        "what's for lunch at Ann McArthur",
+                        "what's for lunch at l.v.i. today",
+                        "what's for lunch at l.v.i.",
+                        "what's for lunch at locust valley intermediate today",
+                        "what's for lunch at locust valley intermediate",
+                        "what's for lunch at bayville primary today",
+                        "what's for lunch at bayville primary",
+                        "what's for lunch at b.v.i. today",
+                        "what's for lunch at b.v.i.",
+                        "what's for lunch at bayville intermediate today",
+                        "what's for lunch at bayville intermediate",
                         "what does waverly have for lunch today",
                         "what does waverly have for lunch",
                         "what lunch does waverly have today",
@@ -16,33 +32,72 @@
                         "what's for waverly's lunch today",
                         "what's waverly's lunch",
                         "what's waverly's lunch today",
-                        "what's for lunch today at A M P"
+                        "what's for lunch today at A M P",
+                        "what's for lunch today at L V I"
                     ]
                 },
                 {
-                    "name": "LunchAMPTomorrowIntent",
+                    "name": "LunchElementaryTomorrowIntent",
                     "slots": [],
                     "samples": [
+                        "what's for lunch tomorrow at elementary",
+                        "what's for lunch tomorrow in elementary",
+                        "what's for lunch at elementary tomorrow",
+                        "what's for lunch in elementary tomorrow",
                         "what's for lunch tomorrow at a.m.p.",
+                        "what's for lunch tomorrow in a.m.p.",
+                        "what's for lunch at a.m.p. tomorrow",
+                        "what's for lunch in a.m.p. tomorrow",
+                        "what's for lunch tomorrow at Ann McArthur",
+                        "what's for lunch tomorrow in Ann McArthur",
+                        "what's for lunch at Ann McArthur tomorrow",
+                        "what's for lunch in Ann McArthur tomorrow",
+                        "what's for lunch tomorrow at l.v.i.",
+                        "what's for lunch tomorrow in l.v.i.",
+                        "what's for lunch at l.v.i. tomorrow",
+                        "what's for lunch in l.v.i. tomorrow",
+                        "what's for lunch tomorrow at locust valley intermediate",
+                        "what's for lunch tomorrow in locust valley intermediate",
+                        "what's for lunch at locust valley intermediate tomorrow",
+                        "what's for lunch in locust valley intermediate tomorrow",
+                        "what's for lunch tomorrow at bayville primary",
+                        "what's for lunch tomorrow in bayville primary",
+                        "what's for lunch at bayville primary tomorrow",
+                        "what's for lunch in bayville primary tomorrow",
+                        "what's for lunch tomorrow at b.v.i.",
+                        "what's for lunch tomorrow in b.v.i.",
+                        "what's for lunch at b.v.i. tomorrow",
+                        "what's for lunch in b.v.i. tomorrow",
+                        "what's for lunch tomorrow at bayville intermediate",
+                        "what's for lunch tomorrow in bayville intermediate",
+                        "what's for lunch at bayville intermediate tomorrow",
+                        "what's for lunch in bayville intermediate tomorrow",
                         "what's for waverly's lunch tomorrow",
                         "what lunch does waverly have tomorrow",
                         "what does waverly have for lunch tomorrow",
                         "what's waverly's lunch tomorrow",
-                        "what's for lunch tomorrow at A M P"
+                        "what's for lunch tomorrow at A M P",
+                        "what's for lunch tomorrow at L V I",
+                        "what's for lunch tomorrow at B V I",
+                        "what's for lunch at A M P tomorrow",
+                        "what's for lunch at L V I tomorrow",
+                        "what's for lunch at B V I tomorrow"
                     ]
                 },
                 {
                     "name": "LunchMiddleSchoolTodayIntent",
                     "slots": [],
                     "samples": [
-                        "what's for lunch today at middle school"
+                        "what's for lunch today at middle school",
+                        "what's for lunch at middle school today"
                     ]
                 },
                 {
                     "name": "LunchMiddleSchoolTomorrowIntent",
                     "slots": [],
                     "samples": [
-                        "what's for lunch tomorrow at middle school"
+                        "what's for lunch tomorrow at middle school",
+                        "what's for lunch at middle school tomorrow"
                     ]
                 },
                 {
