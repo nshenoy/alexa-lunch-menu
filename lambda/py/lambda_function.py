@@ -110,7 +110,6 @@ class LunchElementaryTomorrowIntentHandler(AbstractRequestHandler):
         handler_input.response_builder.speak(speech)
         return handler_input.response_builder.response
 
-
 class LunchMiddleSchoolTodayIntentHandler(AbstractRequestHandler):
     """Handler for Lunch MiddleSchool Today intent."""
     def can_handle(self, handler_input):
@@ -126,12 +125,17 @@ class LunchMiddleSchoolTodayIntentHandler(AbstractRequestHandler):
 
         lunchItem = util.get_lunch_for_today(data.LUNCHMENU_DATA_MIDDLESCHOOL)
 
-        session_attr["lunchItem"] = lunchItem["item"]
-        speech = ("Today's lunch at Middle School is {}.").format(lunchItem["item"])
+        if(lunchItem["item"].find(":") == 1):
+            items = lunchItem["item"].split(":")
+            msg = "Today at Middle School is {article} {day} day, and today's lunch is {item}".format(article="an" if items[0] == "A" else "a", day=items[0], item=items[1])
+        else:
+            msg = "Today's lunch at Middle School is {}".format(lunchItem["item"])
+
+        session_attr["lunchItem"] = msg
+        speech = (msg)
 
         handler_input.response_builder.speak(speech)
         return handler_input.response_builder.response
-
 
 class LunchMiddleSchoolTomorrowIntentHandler(AbstractRequestHandler):
     """Handler for Lunch MiddleSchool Tomorrow intent."""
@@ -148,8 +152,14 @@ class LunchMiddleSchoolTomorrowIntentHandler(AbstractRequestHandler):
 
         lunchItem = util.get_lunch_for_tomorrow(data.LUNCHMENU_DATA_MIDDLESCHOOL)
 
-        session_attr["lunchItem"] = lunchItem["item"]
-        speech = ("Tomorrow's lunch at Middle School is {}.").format(lunchItem["item"])
+        if(lunchItem["item"].find(":") == 1):
+            items = lunchItem["item"].split(":")
+            msg = "Tomorrow at Middle School will be {article} {day} day, and lunch will be {item}".format(article="an" if items[0] == "A" else "a", day=items[0], item=items[1])
+        else:
+            msg = "Tomorrow's lunch at Middle School will be {}".format(lunchItem["item"])
+
+        session_attr["lunchItem"] = msg
+        speech = (msg)
 
         handler_input.response_builder.speak(speech)
         return handler_input.response_builder.response
