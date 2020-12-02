@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "lv lunch menu",
+            "invocationName": "locust valley lunch menu",
             "intents": [
                 {
                     "name": "LunchElementaryTodayIntent",
