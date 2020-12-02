@@ -11,124 +11,136 @@ ABOUT = _("I'll tell you what's for lunch today or tomorrow in Locust Valley Ele
 STOP = _("Okay, see you next time!")
 FALLBACK = _("The {} can't help you with that.")
 GENERIC_REPROMPT = _("What can I help you with?")
-LUNCHMENU = "November2020"
+LUNCHMENU = "December2020"
 LUNCHMENU_DATA_ELEMENTARY = [
     {
-        "date": "2020-11-02",
-        "item": "Grilled Cheese Sandwich"
-    },
-    {
-        "date": "2020-11-06",
-        "item": "Pizza Slice"
-    },
-    {
-        "date": "2020-11-09",
+        "date": "2020-12-01",
         "item": "Maple Glazed French Toast Sticks"
     },
     {
-        "date": "2020-11-10",
-        "item": "Hamburger on a Bun"
+        "date": "2020-12-02",
+        "item": "Meatball Hero"
     },
     {
-        "date": "2020-11-12",
-        "item": "Chicken Nuggets"
-    },
-    {
-        "date": "2020-11-13",
-        "item": "Pizza Cheese Crunchers"
-    },
-    {
-        "date": "2020-11-16",
-        "item": "Maple Glazed French Toast Sticks"
-    },
-    {
-        "date": "2020-11-17",
+        "date": "2020-12-03",
         "item": "Mozzarella Sticks with Marinara Sauce"
     },
     {
-        "date": "2020-11-19",
-        "item": "Popcorn Chicken"
+        "date": "2020-12-04",
+        "item": "Pizza Slice"
     },
     {
-        "date": "2020-11-20",
-        "item": "NO SCHOOL FOR ELEMENTARY STUDENTS"
-    },
-    {
-        "date": "2020-11-23",
-        "item": "Egg and Cheese Sandwich on a Bun"
-    },
-    {
-        "date": "2020-11-24",
-        "item": "Mozzarella Bites"
-    },
-    {
-        "date": "2020-11-30",
+        "date": "2020-12-07",
         "item": "Grilled Cheese Sandwich"
+    },
+    {
+        "date": "2020-12-08",
+        "item": "Pizza Cheese Crunchers"
+    },
+    {
+        "date": "2020-12-09",
+        "item": "Hamburger on a Bun"
+    },
+    {
+        "date": "2020-12-10",
+        "item": "Mozzarella Bites with Marinara Sauce"
+    },
+    {
+        "date": "2020-12-11",
+        "item": "Pizza Slice"
+    },
+    {
+        "date": "2020-12-14",
+        "item": "Egg and Cheese Sandwich on a Bagel"
+    },
+    {
+        "date": "2020-12-15",
+        "item": "Hamburger on a Bun"
+    },
+    {
+        "date": "2020-12-16",
+        "item": "Grilled Cheese Sandwich"
+    },
+    {
+        "date": "2020-12-17",
+        "item": "Chicken Nuggets"
+    },
+    {
+        "date": "2020-12-18",
+        "item": "Pizza Cheese Crunchers"
+    },
+    {
+        "date": "2020-12-21",
+        "item": "Mozzarella Sticks with Marinara Sauce"
+    },
+    {
+        "date": "2020-12-22",
+        "item": "Maple Glazed French Toast Sticks"
     }
 ]
 LUNCHMENU_DATA_MIDDLESCHOOL = [
     {
-        "date": "2020-11-02",
-        "item": "A:Grilled Cheese Sandwich"
-    },
-    {
-        "date": "2020-11-04",
-        "item": "B:Mozzarella Sticks with Marinara Sauce"
-    },
-    {
-        "date": "2020-11-05",
-        "item": "A:Chicken Teriyaki"
-    },
-    {
-        "date": "2020-11-06",
-        "item": "B:Pizza Sticks"
-    },
-    {
-        "date": "2020-11-09",
+        "date": "2020-12-01",
         "item": "A:Maple Glazed French Toast Sticks"
     },
     {
-        "date": "2020-11-10",
-        "item": "B:Hamburger or Cheeseburger on a Bun"
+        "date": "2020-12-02",
+        "item": "B:Hamburger on a Bun"
     },
     {
-        "date": "2020-11-12",
-        "item": "A:Chicken Nuggets"
+        "date": "2020-12-03",
+        "item": "A:Chicken Teriyaki"
     },
     {
-        "date": "2020-11-13",
-        "item": "B:Pizza Cheese Crunchers"
+        "date": "2020-12-04",
+        "item": "B:Pizza Slice"
     },
     {
-        "date": "2020-11-16",
-        "item": "A:Barbeque Rib Sandwich"
+        "date": "2020-12-07",
+        "item": "A:Grilled Cheese Sandwich"
     },
     {
-        "date": "2020-11-17",
-        "item": "B:Turkey Nachos Grande"
+        "date": "2020-12-08",
+        "item": "B:Soft Turkey Taco"
     },
     {
-        "date": "2020-11-18",
-        "item": "A:Meatball Hero"
+        "date": "2020-12-09",
+        "item": "A:Pasta with Meatballs"
     },
     {
-        "date": "2020-11-19",
-        "item": "B:Popcorn Chicken"
+        "date": "2020-12-10",
+        "item": "B:Chicken Caesar Salad Wrap"
     },
     {
-        "date": "2020-11-20",
+        "date": "2020-12-11",
         "item": "A:Pizza Slice"
     },
     {
-        "date": "2020-11-23",
-        "item": "B:Chicken Patty on a Bun"
+        "date": "2020-12-14",
+        "item": "B:Egg and Cheese on a Mini Bagel"
     },
     {
-        "date": "2020-11-24",
-        "item": "A:NO LUNCH SERVICE EARLY DISMISSAL"
+        "date": "2020-12-15",
+        "item": "A:Chicken Fajitas"
     },
     {
-        "date": "2020-11-30",
-        "item": "B:Grilled Cheese Sandwich"
+        "date": "2020-12-16",
+        "item": "B:Hamburger on a Bun"
+    },
+    {
+        "date": "2020-12-17",
+        "item": "A:Chicken Nuggets"
+    },
+    {
+        "date": "2020-12-18",
+        "item": "B:Pizza Slice"
+    },
+    {
+        "date": "2020-12-21",
+        "item": "A:Maple Glazed French Toast Sticks"
+    },
+    {
+        "date": "2020-12-22",
+        "item": "B:Mozzarella Sticks with Marinara Sauce"
     }
 ]

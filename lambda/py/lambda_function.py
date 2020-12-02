@@ -178,16 +178,29 @@ class LunchTodayIntentHandler(AbstractRequestHandler):
         attribute_manager = handler_input.attributes_manager
         session_attr = attribute_manager.session_attributes
 
-        lunchItemElementary = util.get_lunch_for_today(data.LUNCHMENU_DATA_ELEMENTARY)
-        lunchItemMiddleSchool = util.get_lunch_for_today(data.LUNCHMENU_DATA_MIDDLESCHOOL)
+        lunchItemElementaryRaw = util.get_lunch_for_today(data.LUNCHMENU_DATA_ELEMENTARY)
+        lunchItemMiddleSchoolRaw = util.get_lunch_for_today(data.LUNCHMENU_DATA_MIDDLESCHOOL)
+
+        abDay = ""
+        if(lunchItemMiddleSchoolRaw["item"].find(":") == 1):
+            items = lunchItemMiddleSchoolRaw["item"].split(":")
+            abDay = items[0]
+            lunchItemMiddleSchool = items[1]
+        else:
+            lunchItemMiddleSchool = lunchItemMiddleSchoolRaw["item"]
+
+        lunchItemElementary = lunchItemElementaryRaw["item"]
 
         if lunchItemElementary == lunchItemMiddleSchool:
-            speech = ("Today's lunch at both schools are the same: {}").format(lunchItemElementary["item"])
+            speech = ("Today's lunch at both schools are the same: {}.").format(lunchItemElementary)
         else:
-            speech = ("Today's lunch in elementary is {}, and at Middle School it is {}.").format(lunchItemElementary["item"], lunchItemMiddleSchool["item"])
+            speech = ("Today's lunch in elementary is {}, and at Middle School it is {}.").format(lunchItemElementary, lunchItemMiddleSchool)
 
-        session_attr["lunchItemElementary"] = lunchItemElementary["item"]
-        session_attr["lunchItemMiddleSchool"] = lunchItemMiddleSchool["item"]
+        if abDay:
+            speech += " And today is {article} {day} day at Middle school.".format(article="an" if abDay == "A" else "a", day=abDay)
+
+        session_attr["lunchItemElementary"] = lunchItemElementary
+        session_attr["lunchItemMiddleSchool"] = lunchItemMiddleSchool
 
         handler_input.response_builder.speak(speech)
         return handler_input.response_builder.response
@@ -206,16 +219,29 @@ class LunchTomorrowIntentHandler(AbstractRequestHandler):
         attribute_manager = handler_input.attributes_manager
         session_attr = attribute_manager.session_attributes
 
-        lunchItemElementary = util.get_lunch_for_tomorrow(data.LUNCHMENU_DATA_ELEMENTARY)
-        lunchItemMiddleSchool = util.get_lunch_for_tomorrow(data.LUNCHMENU_DATA_MIDDLESCHOOL)
+        lunchItemElementaryRaw = util.get_lunch_for_tomorrow(data.LUNCHMENU_DATA_ELEMENTARY)
+        lunchItemMiddleSchoolRaw = util.get_lunch_for_tomorrow(data.LUNCHMENU_DATA_MIDDLESCHOOL)
+
+        abDay = ""
+        if(lunchItemMiddleSchoolRaw["item"].find(":") == 1):
+            items = lunchItemMiddleSchoolRaw["item"].split(":")
+            abDay = items[0]
+            lunchItemMiddleSchool = items[1]
+        else:
+            lunchItemMiddleSchool = lunchItemMiddleSchoolRaw["item"]
+
+        lunchItemElementary = lunchItemElementaryRaw["item"]
 
         if lunchItemElementary == lunchItemMiddleSchool:
-            speech = ("Tomorrow's lunch at both schools are the same: {}").format(lunchItemElementary["item"])
+            speech = ("Tomorrow's lunch at both schools are the same: {}.").format(lunchItemElementary)
         else:
-            speech = ("Tomorrow's lunch in elementary is {}, and at Middle School it is {}.").format(lunchItemElementary["item"], lunchItemMiddleSchool["item"])
+            speech = ("Tomorrow's lunch in elementary is {}, and at Middle School it is {}.").format(lunchItemElementary, lunchItemMiddleSchool)
 
-        session_attr["lunchItemElementary"] = lunchItemElementary["item"]
-        session_attr["lunchItemMiddleSchool"] = lunchItemMiddleSchool["item"]
+        if abDay:
+            speech += " And tomorrow will be {article} {day} day at Middle school.".format(article="an" if abDay == "A" else "a", day=abDay)
+
+        session_attr["lunchItemElementary"] = lunchItemElementary
+        session_attr["lunchItemMiddleSchool"] = lunchItemMiddleSchool
 
         handler_input.response_builder.speak(speech)
         return handler_input.response_builder.response
