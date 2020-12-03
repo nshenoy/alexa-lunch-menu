@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "lv lunch menu",
+            "invocationName": "locust valley lunch menu",
             "intents": [
                 {
                     "name": "LunchElementaryTodayIntent",
@@ -121,6 +121,31 @@
                         "what lunch is tomorrow",
                         "what's for lunch tomorrow at school",
                         "what's for school lunch tomorrow"
+                    ]
+                },
+                {
+                    "name": "ABDayTodayIntent",
+                    "slots": [],
+                    "samples": [
+                        "what day is it",
+                        "what day is it today",
+                        "is today an A or B day",
+                        "what A B day is it",
+                        "what A B day is it today",
+                        "is today an A day",
+                        "is today a B day"
+                    ]
+                },
+                {
+                    "name": "ABDayTomorrowIntent",
+                    "slots": [],
+                    "samples": [
+                        "what day is it tomorrow",
+                        "is tomorrow an A or B day",
+                        "what A B day is it tomorrow",
+                        "what A B day will it be tomorrow",
+                        "is tomorrow an A day",
+                        "is tomorrow a B day"
                     ]
                 },
                 {
