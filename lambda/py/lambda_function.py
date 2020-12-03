@@ -246,6 +246,59 @@ class LunchTomorrowIntentHandler(AbstractRequestHandler):
         handler_input.response_builder.speak(speech)
         return handler_input.response_builder.response
 
+class ABDayTodayIntentHandler(AbstractRequestHandler):
+    """Handler for ABDay Today intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return is_intent_name("ABDayTodayIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        logger.info("In ABDayTodayIntentHandler")
+
+        attribute_manager = handler_input.attributes_manager
+        session_attr = attribute_manager.session_attributes
+
+        abDay = util.get_lunch_for_today(data.LUNCHMENU_DATA_MIDDLESCHOOL)
+
+        if(abDay["item"].find(":") == 1):
+            items = abDay["item"].split(":")
+            msg = "Today is {article} {day} day.".format(article="an" if items[0] == "A" else "a", day=items[0])
+        else:
+            msg = "I'm sorry, I don't have that information."
+
+        session_attr["abDay"] = msg
+        speech = (msg)
+
+        handler_input.response_builder.speak(speech)
+        return handler_input.response_builder.response
+
+class ABDayTomorrowIntentHandler(AbstractRequestHandler):
+    """Handler for ABDay Tomorrow intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return is_intent_name("ABDayTomorrowIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        logger.info("In ABDayTomorrowIntentHandler")
+
+        attribute_manager = handler_input.attributes_manager
+        session_attr = attribute_manager.session_attributes
+
+        abDay = util.get_lunch_for_tomorrow(data.LUNCHMENU_DATA_MIDDLESCHOOL)
+
+        if(abDay["item"].find(":") == 1):
+            items = abDay["item"].split(":")
+            msg = "Tomorrow will be {article} {day} day.".format(article="an" if items[0] == "A" else "a", day=items[0])
+        else:
+            msg = "I'm sorry, I don't have that information."
+
+        session_attr["abDay"] = msg
+        speech = (msg)
+
+        handler_input.response_builder.speak(speech)
+        return handler_input.response_builder.response
 
 class NoMoreInfoIntentHandler(AbstractRequestHandler):
     """Handler for no to get no more info intent."""
@@ -354,6 +407,8 @@ sb.add_request_handler(LunchElementaryTodayIntentHandler())
 sb.add_request_handler(LunchElementaryTomorrowIntentHandler())
 sb.add_request_handler(LunchMiddleSchoolTodayIntentHandler())
 sb.add_request_handler(LunchMiddleSchoolTomorrowIntentHandler())
+sb.add_request_handler(ABDayTodayIntentHandler())
+sb.add_request_handler(ABDayTomorrowIntentHandler())
 sb.add_request_handler(HelpIntentHandler())
 sb.add_request_handler(ExitIntentHandler())
 sb.add_request_handler(SessionEndedRequestHandler())
