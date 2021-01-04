@@ -25,7 +25,7 @@ def convertMenuToJson(menuFile, jsonFile):
     menuByDate = []
     for i in range(len(menuContents)):
         try:
-            menuByDate.append({"date": datetime.strptime(menuContents[i],"%A, %B %d").date().strftime("2020-%m-%d"), "item": menuContents[i+1]})
+            menuByDate.append({"date": datetime.strptime(menuContents[i],"%A, %B %d").date().strftime("2021-%m-%d"), "item": menuContents[i+1]})
         except:
             continue
 

@@ -11,136 +11,160 @@ ABOUT = _("I'll tell you what's for lunch today or tomorrow in Locust Valley Ele
 STOP = _("Okay, see you next time!")
 FALLBACK = _("The {} can't help you with that.")
 GENERIC_REPROMPT = _("What can I help you with?")
-LUNCHMENU = "December2020"
+LUNCHMENU = "January2021"
 LUNCHMENU_DATA_ELEMENTARY = [
     {
-        "date": "2020-12-01",
+        "date": "2021-01-04",
         "item": "Maple Glazed French Toast Sticks"
     },
     {
-        "date": "2020-12-02",
+        "date": "2021-01-05",
+        "item": "Mozzarella Sticks with Marinara Sauce"
+    },
+    {
+        "date": "2021-01-06",
         "item": "Meatball Hero"
     },
     {
-        "date": "2020-12-03",
-        "item": "Mozzarella Sticks with Marinara Sauce"
+        "date": "2021-01-07",
+        "item": "Egg and Cheese Sandwich on a Bun"
     },
     {
-        "date": "2020-12-04",
-        "item": "Pizza Slice"
-    },
-    {
-        "date": "2020-12-07",
-        "item": "Grilled Cheese Sandwich"
-    },
-    {
-        "date": "2020-12-08",
+        "date": "2021-01-08",
         "item": "Pizza Cheese Crunchers"
     },
     {
-        "date": "2020-12-09",
+        "date": "2021-01-11",
+        "item": "Maple Glazed French Toast Sticks"
+    },
+    {
+        "date": "2021-01-12",
+        "item": "Mozzarella Sticks with Marinara Sauce"
+    },
+    {
+        "date": "2021-01-13",
         "item": "Hamburger on a Bun"
     },
     {
-        "date": "2020-12-10",
-        "item": "Mozzarella Bites with Marinara Sauce"
-    },
-    {
-        "date": "2020-12-11",
-        "item": "Pizza Slice"
-    },
-    {
-        "date": "2020-12-14",
-        "item": "Egg and Cheese Sandwich on a Bagel"
-    },
-    {
-        "date": "2020-12-15",
-        "item": "Hamburger on a Bun"
-    },
-    {
-        "date": "2020-12-16",
-        "item": "Grilled Cheese Sandwich"
-    },
-    {
-        "date": "2020-12-17",
+        "date": "2021-01-14",
         "item": "Chicken Nuggets"
     },
     {
-        "date": "2020-12-18",
-        "item": "Pizza Cheese Crunchers"
+        "date": "2021-01-15",
+        "item": "Pizza Sticks"
     },
     {
-        "date": "2020-12-21",
-        "item": "Mozzarella Sticks with Marinara Sauce"
+        "date": "2021-01-19",
+        "item": "Egg and Cheese Sandwich on a Bagel"
     },
     {
-        "date": "2020-12-22",
+        "date": "2021-01-20",
+        "item": "Meatball Hero"
+    },
+    {
+        "date": "2021-01-21",
+        "item": "Chicken Nuggets"
+    },
+    {
+        "date": "2021-01-22",
+        "item": "Pizza Slice"
+    },
+    {
+        "date": "2021-01-25",
         "item": "Maple Glazed French Toast Sticks"
+    },
+    {
+        "date": "2021-01-26",
+        "item": "Crispy Chicken Patty on a Bun"
+    },
+    {
+        "date": "2021-01-27",
+        "item": "Hamburger on a Bun"
+    },
+    {
+        "date": "2021-01-28",
+        "item": "Chicken Nuggets"
+    },
+    {
+        "date": "2021-01-29",
+        "item": "Pizza Slice"
     }
 ]
 LUNCHMENU_DATA_MIDDLESCHOOL = [
     {
-        "date": "2020-12-01",
-        "item": "A:Maple Glazed French Toast Sticks"
+        "date": "2021-01-04",
+        "item": "A:Mozzarella Sticks with Marinara Sauce"
     },
     {
-        "date": "2020-12-02",
-        "item": "B:Hamburger on a Bun"
+        "date": "2021-01-05",
+        "item": "B:Twin Tacos with Cheddar, Salsa, Lettuce"
     },
     {
-        "date": "2020-12-03",
-        "item": "A:Chicken Teriyaki"
+        "date": "2021-01-06",
+        "item": "A:Meatball Hero"
     },
     {
-        "date": "2020-12-04",
-        "item": "B:Pizza Slice"
+        "date": "2021-01-07",
+        "item": "B:Filet-O-Fish Sandwich"
     },
     {
-        "date": "2020-12-07",
-        "item": "A:Grilled Cheese Sandwich"
-    },
-    {
-        "date": "2020-12-08",
-        "item": "B:Soft Turkey Taco"
-    },
-    {
-        "date": "2020-12-09",
-        "item": "A:Pasta with Meatballs"
-    },
-    {
-        "date": "2020-12-10",
-        "item": "B:Chicken Caesar Salad Wrap"
-    },
-    {
-        "date": "2020-12-11",
+        "date": "2021-01-08",
         "item": "A:Pizza Slice"
     },
     {
-        "date": "2020-12-14",
-        "item": "B:Egg and Cheese on a Mini Bagel"
+        "date": "2021-01-11",
+        "item": "B:Maple Glazed French Toast Sticks"
     },
     {
-        "date": "2020-12-15",
-        "item": "A:Chicken Fajitas"
+        "date": "2021-01-12",
+        "item": "A:Nachos"
     },
     {
-        "date": "2020-12-16",
-        "item": "B:Hamburger on a Bun"
+        "date": "2021-01-13",
+        "item": "B:Hamburger, Veggie Burger on a Bun"
     },
     {
-        "date": "2020-12-17",
-        "item": "A:Chicken Nuggets"
+        "date": "2021-01-14",
+        "item": "A:Chicken Souvlaki on Loco Bread"
     },
     {
-        "date": "2020-12-18",
+        "date": "2021-01-15",
+        "item": "B:Pizza Sticks"
+    },
+    {
+        "date": "2021-01-19",
+        "item": "A:Egg and Cheese on a Mini Bagel"
+    },
+    {
+        "date": "2021-01-20",
+        "item": "B:Pasta With Meatballs"
+    },
+    {
+        "date": "2021-01-21",
+        "item": "A:Teriyaki Chicken"
+    },
+    {
+        "date": "2021-01-22",
+        "item": "B:Pizza Cheese Crunchers"
+    },
+    {
+        "date": "2021-01-25",
+        "item": "A:Mozzarella Sticks with Marinara Sauce"
+    },
+    {
+        "date": "2021-01-26",
+        "item": "B:Nachos with Diced Chicken Cheddar, Salsa, Lettuce"
+    },
+    {
+        "date": "2021-01-27",
+        "item": "A:Philly Cheese Steak-um on a Club Roll"
+    },
+    {
+        "date": "2021-01-28",
+        "item": "A:Spicy or Plain Chicken Patty on a Bun"
+    },
+    {
+        "date": "2021-01-29",
         "item": "B:Pizza Slice"
-    },
-    {
-        "date": "2020-12-21",
-        "item": "A:Maple Glazed French Toast Sticks"
-    },
-    {
-        "date": "2020-12-22",
-        "item": "B:Mozzarella Sticks with Marinara Sauce"
     }
 ]
