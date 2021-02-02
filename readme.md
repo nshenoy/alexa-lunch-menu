@@ -2,7 +2,7 @@
 
 # Locust Valley Lunch Menu Skill
 
-An Alexa skill for the daily LVCSD daily lunch menu. Go Falcons!
+An Alexa skill for the daily LVCSD daily lunch menu.
 
 ---- 
 
