@@ -1,6 +1,18 @@
-### Run the following from the `/lambda/` folder:
-#### 1. Install Alexa Skills Kit SDK
-`pip install ask-sdk -t skill_env`
+![Icon](https://raw.github.com/nshenoy/alexa-lunch-menu/main/assets/lv-small-icon.png)
 
-#### 2. Install Babel 
-`pip install babel -t skill_env`
+# Locust Valley Lunch Menu Skill
+
+An Alexa skill for the daily LVCSD daily lunch menu. Go Falcons!
+
+---- 
+
+
+### Initial Setup
+Run the following from the `/lambda/` folder:
+
+```bash
+pip install ask-sdk -t skill_env
+pip install babel -t skill_env
+```
+This will install the Alexa Skills Kit SDK and Babel python packages.
+
