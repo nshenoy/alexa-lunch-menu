@@ -15,7 +15,7 @@ def convertMenuToText(menuFile, textFile):
     menuRawText = extract_text(menuFile)
 
     # save the text file
-    with open(textFile, "w") as fout:
+    with open(textFile, "w", encoding="utf-8") as fout:
         fout.write(menuRawText)
 
 if __name__ == "__main__":
