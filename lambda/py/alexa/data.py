@@ -11,160 +11,160 @@ ABOUT = _("I'll tell you what's for lunch today or tomorrow in Locust Valley Ele
 STOP = _("Okay, see you next time!")
 FALLBACK = _("The {} can't help you with that.")
 GENERIC_REPROMPT = _("What can I help you with?")
-LUNCHMENU = "May2021"
+LUNCHMENU = "June2021"
 LUNCHMENU_DATA_ELEMENTARY = [
     {
-        "date": "2021-05-03",
+        "date": "2021-06-01",
         "item": "Maple Glazed French Toast Sticks"
     },
     {
-        "date": "2021-05-04",
-        "item": "Pizza Cheese Crunchers"
-    },
-    {
-        "date": "2021-05-05",
+        "date": "2021-06-02",
         "item": "Cheeseburger on a Bun"
     },
     {
-        "date": "2021-05-06",
+        "date": "2021-06-03",
         "item": "Chicken Nuggets"
     },
     {
-        "date": "2021-05-07",
+        "date": "2021-06-04",
         "item": "Pizza Slice"
     },
     {
-        "date": "2021-05-10",
-        "item": "Grilled Cheese Sandwich"
+        "date": "2021-06-07",
+        "item": "Egg and Cheese Sandwich on a Whole Wheat Roll"
     },
     {
-        "date": "2021-05-11",
-        "item": "Mozzarella Sticks with Marinara Sauce"
-    },
-    {
-        "date": "2021-05-12",
-        "item": "Cheeseburger on a Bun"
-    },
-    {
-        "date": "2021-05-13",
-        "item": "Popcorn Chicken"
-    },
-    {
-        "date": "2021-05-14",
-        "item": "Pizza Slice"
-    },
-    {
-        "date": "2021-05-17",
-        "item": "Maple Glazed French Toast Sticks"
-    },
-    {
-        "date": "2021-05-18",
+        "date": "2021-06-08",
         "item": "Pizza Sticks"
     },
     {
-        "date": "2021-05-19",
+        "date": "2021-06-09",
         "item": "Cheeseburger on a Bun"
     },
     {
-        "date": "2021-05-20",
-        "item": "Chicken Nuggets"
+        "date": "2021-06-10",
+        "item": "Meatball Hero"
     },
     {
-        "date": "2021-05-21",
+        "date": "2021-06-11",
         "item": "Pizza Slice"
     },
     {
-        "date": "2021-05-24",
-        "item": "Grilled Cheese Sandwich"
+        "date": "2021-06-14",
+        "item": "Egg and Cheese Sandwich on a Whole Wheat Roll"
     },
     {
-        "date": "2021-05-25",
-        "item": "Pizza Cheese Crunchers"
+        "date": "2021-06-15",
+        "item": "Maple Glazed French Toast Sticks"
     },
     {
-        "date": "2021-05-26",
-        "item": "Hot Dog on a Bun"
+        "date": "2021-06-16",
+        "item": "Cheeseburger on a Bun"
     },
     {
-        "date": "2021-05-27",
-        "item": "Chicken Nuggets"
+        "date": "2021-06-17",
+        "item": "Cooks Choice"
+    },
+    {
+        "date": "2021-06-18",
+        "item": "Cooks Choice"
+    },
+    {
+        "date": "2021-06-21",
+        "item": "Cooks Choice"
+    },
+    {
+        "date": "2021-06-22",
+        "item": "No Lunch Service. Early Dismissal"
+    },
+    {
+        "date": "2021-06-23",
+        "item": "No Lunch Service. Early Dismissal"
+    },
+    {
+        "date": "2021-06-24",
+        "item": "No Lunch Service. Early Dismissal"
+    },
+    {
+        "date": "2021-06-25",
+        "item": "No Lunch Service. Early Dismissal"
     }
 ]
 LUNCHMENU_DATA_MIDDLESCHOOL = [
     {
-        "date": "2021-05-03",
-        "item": "B:Maple Glazed French Toast Sticks"
+        "date": "2021-06-01",
+        "item": "A:Pizza Cheese Crunchers"
     },
     {
-        "date": "2021-05-04",
-        "item": "A:Macaroni and Cheese"
+        "date": "2021-06-02",
+        "item": "B:Hamburger, Cheeseburger or Veggie Burger on a Bun"
     },
     {
-        "date": "2021-05-05",
-        "item": "B:Nachos"
+        "date": "2021-06-03",
+        "item": "A:Chicken Tenders"
     },
     {
-        "date": "2021-05-06",
-        "item": "A:Chicken Teriyaki"
-    },
-    {
-        "date": "2021-05-07",
+        "date": "2021-06-04",
         "item": "B:Pizza Slice"
     },
     {
-        "date": "2021-05-10",
+        "date": "2021-06-07",
         "item": "A:Mozzarella Sticks with Marinara Sauce"
     },
     {
-        "date": "2021-05-11",
-        "item": "B:Turkey Tacos"
+        "date": "2021-06-08",
+        "item": "B:Meatball Hero Parmesan"
     },
     {
-        "date": "2021-05-12",
+        "date": "2021-06-09",
         "item": "A:Hamburger, Cheeseburger or Veggie Burger on a Bun"
     },
     {
-        "date": "2021-05-13",
+        "date": "2021-06-10",
         "item": "B:Chicken Tenders"
     },
     {
-        "date": "2021-05-14",
+        "date": "2021-06-11",
         "item": "A:Pizza Slice"
     },
     {
-        "date": "2021-05-17",
-        "item": "B:Maple Glazed French Toast Sticks"
+        "date": "2021-06-14",
+        "item": "B:Cooks Choice"
     },
     {
-        "date": "2021-05-18",
-        "item": "A:Pizza Sticks with Marinara Sauce"
+        "date": "2021-06-15",
+        "item": "A:Cooks Choice"
     },
     {
-        "date": "2021-05-19",
-        "item": "B:Pasta with Meatballs"
+        "date": "2021-06-16",
+        "item": "B:Cooks Choice"
     },
     {
-        "date": "2021-05-20",
-        "item": "A:Chicken Teriyaki"
+        "date": "2021-06-17",
+        "item": "A:Cooks Choice"
     },
     {
-        "date": "2021-05-21",
-        "item": "B:Pizza Slice"
+        "date": "2021-06-18",
+        "item": "B:Cooks Choice"
     },
     {
-        "date": "2021-05-24",
-        "item": "A:Mozzarella Sticks with Marinara Sauce"
+        "date": "2021-06-21",
+        "item": "A:Cooks Choice"
     },
     {
-        "date": "2021-05-25",
-        "item": "B:Buffalo or Plain Pizza Cheese Crunchers"
+        "date": "2021-06-22",
+        "item": "B:No Lunch Service. Early Dismissal"
     },
     {
-        "date": "2021-05-26",
-        "item": "A:Hamburger, Cheeseburger or Veggie Burger on a Bun"
+        "date": "2021-06-23",
+        "item": "A:No Lunch Service. Early Dismissal"
     },
     {
-        "date": "2021-05-27",
-        "item": "B:Chicken Nuggets"
+        "date": "2021-06-24",
+        "item": "B:No Lunch Service. Early Dismissal"
+    },
+    {
+        "date": "2021-06-25",
+        "item": "A:No Lunch Service. Early Dismissal"
     }
 ]
