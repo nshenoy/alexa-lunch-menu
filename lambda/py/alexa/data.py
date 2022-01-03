@@ -11,136 +11,168 @@ ABOUT = _("I'll tell you what's for lunch today or tomorrow in Locust Valley Ele
 STOP = _("Okay, see you next time!")
 FALLBACK = _("The {} can't help you with that.")
 GENERIC_REPROMPT = _("What can I help you with?")
-LUNCHMENU = "December2021"
+LUNCHMENU = "January2022"
 LUNCHMENU_DATA_ELEMENTARY = [
     {
-        "date": "2021-12-01",
-        "item": "Eggoji Waffles and Turkey Sausage Patty"
-    },
-    {
-        "date": "2021-12-02",
-        "item": "Chicken Nuggets"
-    },
-    {
-        "date": "2021-12-03",
-        "item": "Cheese Pizza Slice"
-    },
-    {
-        "date": "2021-12-06",
-        "item": "Homemade Mac and Cheese"
-    },
-    {
-        "date": "2021-12-07",
+        "date": "2022-01-03",
         "item": "Cheese Quesadilla"
     },
     {
-        "date": "2021-12-08",
-        "item": "Hamburger or Cheeseburger on a Bun"
+        "date": "2022-01-04",
+        "item": "Eggoji Waffles"
     },
     {
-        "date": "2021-12-09",
+        "date": "2022-01-05",
+        "item": "Baked Ziti"
+    },
+    {
+        "date": "2022-01-06",
+        "item": "Popcorn Chicken"
+    },
+    {
+        "date": "2022-01-07",
         "item": "Cheese Pizza Slice"
     },
     {
-        "date": "2021-12-10",
-        "item": "Half Day Dismissal- No Lunch Service"
+        "date": "2022-01-10",
+        "item": "Macaroni and Cheese"
     },
     {
-        "date": "2021-12-13",
-        "item": "Grilled Cheese"
+        "date": "2022-01-11",
+        "item": "Turkey Nachos Grande"
     },
     {
-        "date": "2021-12-14",
-        "item": "Twin Soft Tacos and Shredded Cheddar"
+        "date": "2022-01-12",
+        "item": "Cheese booger on a bun"
     },
     {
-        "date": "2021-12-15",
-        "item": "Hamburger or Cheeseburger on a Bun"
+        "date": "2022-01-13",
+        "item": "Chicken Tenders"
     },
     {
-        "date": "2021-12-16",
+        "date": "2022-01-14",
+        "item": "Cheese Pizza Slice"
+    },
+    {
+        "date": "2022-01-18",
+        "item": "Beef Tacos"
+    },
+    {
+        "date": "2022-01-19",
+        "item": "Pizza Sticks"
+    },
+    {
+        "date": "2022-01-20",
         "item": "Chicken Nuggets"
     },
     {
-        "date": "2021-12-17",
+        "date": "2022-01-21",
         "item": "Cheese Pizza Slice"
     },
     {
-        "date": "2021-12-20",
+        "date": "2022-01-24",
         "item": "Pizza Crunchers"
     },
     {
-        "date": "2021-12-21",
-        "item": "Mozzarella Sticks"
+        "date": "2022-01-25",
+        "item": "Mozarella Sticks"
     },
     {
-        "date": "2021-12-22",
+        "date": "2022-01-26",
+        "item": "Cheeseburger on a Bun"
+    },
+    {
+        "date": "2022-01-27",
+        "item": "Chicken Nuggets"
+    },
+    {
+        "date": "2022-01-28",
         "item": "Cheese Pizza Slice"
+    },
+    {
+        "date": "2022-01-31",
+        "item": "Grilled Cheese"
     }
 ]
 LUNCHMENU_DATA_MIDDLESCHOOL = [
     {
-        "date": "2021-12-01",
-        "item": "A:Pizza sticks"
+        "date": "2022-01-03",
+        "item": "A:Cheese Quesadilla"
     },
     {
-        "date": "2021-12-02",
+        "date": "2022-01-04",
+        "item": "B:Grilled Cheese"
+    },
+    {
+        "date": "2022-01-05",
+        "item": "A:Baked Ziti"
+    },
+    {
+        "date": "2022-01-06",
         "item": "B:Chicken Nuggets"
     },
     {
-        "date": "2021-12-03",
+        "date": "2022-01-07",
         "item": "A:Cheese Pizza Slice"
     },
     {
-        "date": "2021-12-06",
-        "item": "B:Homemade Mac and Cheese"
+        "date": "2022-01-10",
+        "item": "B:Macaroni and Cheese"
     },
     {
-        "date": "2021-12-07",
-        "item": "A:Oven roasted chicken"
+        "date": "2022-01-11",
+        "item": "A:Turkey Nachos Grande"
     },
     {
-        "date": "2021-12-08",
-        "item": "B:Hamburger or Cheeseburger on a Bun"
+        "date": "2022-01-12",
+        "item": "B:Cheese booger on a bun"
     },
     {
-        "date": "2021-12-09",
-        "item": "A:Chicken nuggets"
+        "date": "2022-01-13",
+        "item": "A:Oven Roasted Chicken"
     },
     {
-        "date": "2021-12-10",
+        "date": "2022-01-14",
         "item": "B:Cheese Pizza Slice"
     },
     {
-        "date": "2021-12-13",
-        "item": "A:Grilled Cheese"
+        "date": "2022-01-18",
+        "item": "A:Beef Tacos"
     },
     {
-        "date": "2021-12-14",
-        "item": "B:Twin Soft Tacos and Shredded Cheddar"
+        "date": "2022-01-19",
+        "item": "B:Pizza Sticks"
     },
     {
-        "date": "2021-12-15",
-        "item": "A:Hamburger or Cheeseburger on a Bun"
+        "date": "2022-01-20",
+        "item": "A:Chicken Nuggets"
     },
     {
-        "date": "2021-12-16",
+        "date": "2022-01-21",
+        "item": "B:Cheese Pizza Slice"
+    },
+    {
+        "date": "2022-01-24",
+        "item": "A:Pizza Crunchers"
+    },
+    {
+        "date": "2022-01-25",
+        "item": "B:Mozarella Sticks"
+    },
+    {
+        "date": "2022-01-26",
+        "item": "A:Cheeseburger on a Bun"
+    },
+    {
+        "date": "2022-01-27",
         "item": "B:Chicken Nuggets"
     },
     {
-        "date": "2021-12-17",
+        "date": "2022-01-28",
         "item": "A:Cheese Pizza Slice"
     },
     {
-        "date": "2021-12-20",
-        "item": "B:Grilled cheese"
-    },
-    {
-        "date": "2021-12-21",
-        "item": "A:Mozzarella Sticks"
-    },
-    {
-        "date": "2021-12-22",
-        "item": "B:Cheese Pizza Slice"
+        "date": "2022-01-31",
+        "item": "B:Grilled Cheese"
     }
 ]
