@@ -117,62 +117,62 @@ LUNCHMENU_DATA_MIDDLESCHOOL = [
     },
     {
         "date": "2022-01-10",
-        "item": "B:Macaroni and Cheese"
+        "item": "A:Macaroni and Cheese"
     },
     {
         "date": "2022-01-11",
-        "item": "A:Turkey Nachos Grande"
+        "item": "B:Turkey Nachos Grande"
     },
     {
         "date": "2022-01-12",
-        "item": "B:Cheese booger on a bun"
+        "item": "A:Cheese booger on a bun"
     },
     {
         "date": "2022-01-13",
-        "item": "A:Oven Roasted Chicken"
+        "item": "B:Oven Roasted Chicken"
     },
     {
         "date": "2022-01-14",
-        "item": "B:Cheese Pizza Slice"
-    },
-    {
-        "date": "2022-01-18",
-        "item": "A:Beef Tacos"
-    },
-    {
-        "date": "2022-01-19",
-        "item": "B:Pizza Sticks"
-    },
-    {
-        "date": "2022-01-20",
-        "item": "A:Chicken Nuggets"
-    },
-    {
-        "date": "2022-01-21",
-        "item": "B:Cheese Pizza Slice"
-    },
-    {
-        "date": "2022-01-24",
-        "item": "A:Pizza Crunchers"
-    },
-    {
-        "date": "2022-01-25",
-        "item": "B:Mozarella Sticks"
-    },
-    {
-        "date": "2022-01-26",
-        "item": "A:Cheeseburger on a Bun"
-    },
-    {
-        "date": "2022-01-27",
-        "item": "B:Chicken Nuggets"
-    },
-    {
-        "date": "2022-01-28",
         "item": "A:Cheese Pizza Slice"
     },
     {
+        "date": "2022-01-18",
+        "item": "B:Beef Tacos"
+    },
+    {
+        "date": "2022-01-19",
+        "item": "A:Pizza Sticks"
+    },
+    {
+        "date": "2022-01-20",
+        "item": "B:Chicken Nuggets"
+    },
+    {
+        "date": "2022-01-21",
+        "item": "A:Cheese Pizza Slice"
+    },
+    {
+        "date": "2022-01-24",
+        "item": "B:Pizza Crunchers"
+    },
+    {
+        "date": "2022-01-25",
+        "item": "A:Mozarella Sticks"
+    },
+    {
+        "date": "2022-01-26",
+        "item": "B:Cheeseburger on a Bun"
+    },
+    {
+        "date": "2022-01-27",
+        "item": "A:Chicken Nuggets"
+    },
+    {
+        "date": "2022-01-28",
+        "item": "B:Cheese Pizza Slice"
+    },
+    {
         "date": "2022-01-31",
-        "item": "B:Grilled Cheese"
+        "item": "A:Grilled Cheese"
     }
 ]
