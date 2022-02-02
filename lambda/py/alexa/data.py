@@ -11,168 +11,128 @@ ABOUT = _("I'll tell you what's for lunch today or tomorrow in Locust Valley Ele
 STOP = _("Okay, see you next time!")
 FALLBACK = _("The {} can't help you with that.")
 GENERIC_REPROMPT = _("What can I help you with?")
-LUNCHMENU = "January2022"
+LUNCHMENU = "February2022"
 LUNCHMENU_DATA_ELEMENTARY = [
     {
-        "date": "2022-01-03",
-        "item": "Cheese Quesadilla"
+        "date": "2022-02-01",
+        "item": "Pasta with Meatballs"
     },
     {
-        "date": "2022-01-04",
+        "date": "2022-02-02",
         "item": "Eggoji Waffles"
     },
     {
-        "date": "2022-01-05",
-        "item": "Baked Ziti"
-    },
-    {
-        "date": "2022-01-06",
-        "item": "Popcorn Chicken"
-    },
-    {
-        "date": "2022-01-07",
-        "item": "Cheese Pizza Slice"
-    },
-    {
-        "date": "2022-01-10",
-        "item": "Macaroni and Cheese"
-    },
-    {
-        "date": "2022-01-11",
-        "item": "Turkey Nachos Grande"
-    },
-    {
-        "date": "2022-01-12",
-        "item": "Cheese booger on a bun"
-    },
-    {
-        "date": "2022-01-13",
-        "item": "Chicken Tenders"
-    },
-    {
-        "date": "2022-01-14",
-        "item": "Cheese Pizza Slice"
-    },
-    {
-        "date": "2022-01-18",
-        "item": "Beef Tacos"
-    },
-    {
-        "date": "2022-01-19",
-        "item": "Pizza Sticks"
-    },
-    {
-        "date": "2022-01-20",
+        "date": "2022-02-03",
         "item": "Chicken Nuggets"
     },
     {
-        "date": "2022-01-21",
+        "date": "2022-02-04",
         "item": "Cheese Pizza Slice"
     },
     {
-        "date": "2022-01-24",
+        "date": "2022-02-07",
+        "item": "Macaroni & Cheese"
+    },
+    {
+        "date": "2022-02-08",
+        "item": "All Beef Hot Dog on a Bun"
+    },
+    {
+        "date": "2022-02-09",
+        "item": "Eggo Confetti Pancakes"
+    },
+    {
+        "date": "2022-02-10",
+        "item": "Chicken Nuggets"
+    },
+    {
+        "date": "2022-02-11",
+        "item": "Cheese Pizza Slice"
+    },
+    {
+        "date": "2022-02-14",
         "item": "Pizza Crunchers"
     },
     {
-        "date": "2022-01-25",
-        "item": "Mozarella Sticks"
+        "date": "2022-02-15",
+        "item": "Beef Tacos"
     },
     {
-        "date": "2022-01-26",
-        "item": "Cheeseburger on a Bun"
+        "date": "2022-02-16",
+        "item": "Grilled Cheese"
     },
     {
-        "date": "2022-01-27",
+        "date": "2022-02-17",
         "item": "Chicken Nuggets"
     },
     {
-        "date": "2022-01-28",
+        "date": "2022-02-18",
         "item": "Cheese Pizza Slice"
     },
     {
-        "date": "2022-01-31",
+        "date": "2022-02-28",
         "item": "Grilled Cheese"
     }
 ]
 LUNCHMENU_DATA_MIDDLESCHOOL = [
     {
-        "date": "2022-01-03",
-        "item": "A:Cheese Quesadilla"
+        "date": "2022-02-01",
+        "item": "B:Meatball Hero Parmesan"
     },
     {
-        "date": "2022-01-04",
-        "item": "B:Grilled Cheese"
-    },
-    {
-        "date": "2022-01-05",
+        "date": "2022-02-02",
         "item": "A:Baked Ziti"
     },
     {
-        "date": "2022-01-06",
+        "date": "2022-02-03",
         "item": "B:Chicken Nuggets"
     },
     {
-        "date": "2022-01-07",
+        "date": "2022-02-04",
         "item": "A:Cheese Pizza Slice"
     },
     {
-        "date": "2022-01-10",
-        "item": "A:Macaroni and Cheese"
+        "date": "2022-02-07",
+        "item": "B:Macaroni & Cheese"
     },
     {
-        "date": "2022-01-11",
-        "item": "B:Turkey Nachos Grande"
+        "date": "2022-02-08",
+        "item": "A:Cheese Quesadilla"
     },
     {
-        "date": "2022-01-12",
-        "item": "A:Cheese booger on a bun"
+        "date": "2022-02-09",
+        "item": "B:Pizza Sticks"
     },
     {
-        "date": "2022-01-13",
-        "item": "B:Oven Roasted Chicken"
-    },
-    {
-        "date": "2022-01-14",
-        "item": "A:Cheese Pizza Slice"
-    },
-    {
-        "date": "2022-01-18",
-        "item": "B:Beef Tacos"
-    },
-    {
-        "date": "2022-01-19",
-        "item": "A:Pizza Sticks"
-    },
-    {
-        "date": "2022-01-20",
-        "item": "B:Chicken Nuggets"
-    },
-    {
-        "date": "2022-01-21",
-        "item": "A:Cheese Pizza Slice"
-    },
-    {
-        "date": "2022-01-24",
-        "item": "B:Pizza Crunchers"
-    },
-    {
-        "date": "2022-01-25",
-        "item": "A:Mozarella Sticks"
-    },
-    {
-        "date": "2022-01-26",
-        "item": "B:Cheeseburger on a Bun"
-    },
-    {
-        "date": "2022-01-27",
+        "date": "2022-02-10",
         "item": "A:Chicken Nuggets"
     },
     {
-        "date": "2022-01-28",
+        "date": "2022-02-11",
         "item": "B:Cheese Pizza Slice"
     },
     {
-        "date": "2022-01-31",
+        "date": "2022-02-14",
         "item": "A:Grilled Cheese"
+    },
+    {
+        "date": "2022-02-15",
+        "item": "B:Beef Tacos"
+    },
+    {
+        "date": "2022-02-16",
+        "item": "A:Chicken Patty on a Bun"
+    },
+    {
+        "date": "2022-02-17",
+        "item": "B:Chicken Nuggets"
+    },
+    {
+        "date": "2022-02-18",
+        "item": "A:Cheese Pizza Slice"
+    },
+    {
+        "date": "2022-02-28",
+        "item": "B:Grilled Cheese"
     }
 ]
