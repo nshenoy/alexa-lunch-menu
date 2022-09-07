@@ -11,192 +11,152 @@ ABOUT = _("I'll tell you what's for lunch today or tomorrow in Locust Valley Ele
 STOP = _("Okay, see you next time!")
 FALLBACK = _("The {} can't help you with that.")
 GENERIC_REPROMPT = _("What can I help you with?")
-LUNCHMENU = "March2022"
+LUNCHMENU = "September2022"
 LUNCHMENU_DATA_ELEMENTARY = [
     {
-        "date": "2022-03-01",
-        "item": "Pasta with Meatballs"
+        "date": "2022-09-01",
+        "item": "Hamburger or Cheeseburger"
     },
     {
-        "date": "2022-03-02",
-        "item": "Eggoji Waffles"
+        "date": "2022-09-06",
+        "item": "Cinnamon French Toast Sticks"
     },
     {
-        "date": "2022-03-03",
-        "item": "Chicken Nuggets"
+        "date": "2022-09-07",
+        "item": "Pasta Day. Plain pasta with butter or meatballs and marinara sauce."
     },
     {
-        "date": "2022-03-04",
-        "item": "Cheese Pizza Slice"
+        "date": "2022-09-08",
+        "item": "Turkey Nachos Grande"
     },
     {
-        "date": "2022-03-07",
-        "item": "Macaroni & Cheese"
+        "date": "2022-09-09",
+        "item": "Cheese or Pepperoni Pizza"
     },
     {
-        "date": "2022-03-08",
-        "item": "All Beef Hot Dog on a Bun"
+        "date": "2022-09-12",
+        "item": "Breaded Chicken Tenders"
     },
     {
-        "date": "2022-03-09",
-        "item": "Eggo Mini Pancakes"
+        "date": "2022-09-13",
+        "item": "Pancakes with Syrup"
     },
     {
-        "date": "2022-03-10",
-        "item": "Chicken Nuggets"
+        "date": "2022-09-14",
+        "item": "Hot Dog or Hamburger"
     },
     {
-        "date": "2022-03-11",
-        "item": "Cheese Pizza Slice"
+        "date": "2022-09-15",
+        "item": "Macaroni and Cheese"
     },
     {
-        "date": "2022-03-14",
-        "item": "Grilled Cheese"
+        "date": "2022-09-16",
+        "item": "Cheese or Pepperoni Pizza"
     },
     {
-        "date": "2022-03-15",
-        "item": "Beef Tacos"
+        "date": "2022-09-19",
+        "item": "Breaded Chicken Bites"
     },
     {
-        "date": "2022-03-16",
-        "item": "Eggoji Waffles"
+        "date": "2022-09-20",
+        "item": "Cinnamon French Toast Sticks"
     },
     {
-        "date": "2022-03-17",
-        "item": "Chicken Nuggets"
+        "date": "2022-09-21",
+        "item": "Cheesy Stuffed Breadsticks with Marinara Sauce"
     },
     {
-        "date": "2022-03-18",
-        "item": "Cheese Pizza Slice"
+        "date": "2022-09-22",
+        "item": "Turkey Nachos Grande"
     },
     {
-        "date": "2022-03-21",
-        "item": "Grilled Cheese"
+        "date": "2022-09-23",
+        "item": "Cheese or Pepperoni Pizza"
     },
     {
-        "date": "2022-03-22",
-        "item": "Pizza Crunchers"
+        "date": "2022-09-28",
+        "item": "Chicken Tenders and Waffles with Syrup"
     },
     {
-        "date": "2022-03-23",
-        "item": "French Toast Sticks"
+        "date": "2022-09-29",
+        "item": "Baked Mozarella Sticks"
     },
     {
-        "date": "2022-03-24",
-        "item": "Cheeseburger"
-    },
-    {
-        "date": "2022-03-25",
-        "item": "No lunch because it's a half day"
-    },
-    {
-        "date": "2022-03-28",
-        "item": "Grilled Cheese"
-    },
-    {
-        "date": "2022-03-29",
-        "item": "Pizza Sticks"
-    },
-    {
-        "date": "2022-03-30",
-        "item": "Pasta with Meatballs"
-    },
-    {
-        "date": "2022-03-31",
-        "item": "Chicken Nuggets"
+        "date": "2022-09-30",
+        "item": "Cheese or Pepperoni Pizza"
     }
 ]
 LUNCHMENU_DATA_MIDDLESCHOOL = [
     {
-        "date": "2022-03-01",
-        "item": "A:Chili con Carne"
+        "date": "2022-09-01",
+        "item": "Bacon Cheeseburger"
     },
     {
-        "date": "2022-03-02",
-        "item": "B:Baked Ziti"
+        "date": "2022-09-06",
+        "item": "Cinnamon French Toast Sticks"
     },
     {
-        "date": "2022-03-03",
-        "item": "A:Chicken Nuggets"
+        "date": "2022-09-07",
+        "item": "Pasta Day. Plain pasta with butter or meatballs and marinara sauce."
     },
     {
-        "date": "2022-03-04",
-        "item": "B:Cheese Pizza Slice"
+        "date": "2022-09-08",
+        "item": "Turkey Nachos Grande"
     },
     {
-        "date": "2022-03-07",
-        "item": "A:Pizza Sticks"
+        "date": "2022-09-09",
+        "item": "Italian Sausage and Peppers Hero"
     },
     {
-        "date": "2022-03-08",
-        "item": "B:Chicken Quesadilla"
+        "date": "2022-09-12",
+        "item": "Breaded Chicken Tenders"
     },
     {
-        "date": "2022-03-09",
-        "item": "A:All Beef Hot Dog on a Bun"
+        "date": "2022-09-13",
+        "item": "Chili or Buffalo Chicken"
     },
     {
-        "date": "2022-03-10",
-        "item": "B:Chicken Nuggets"
+        "date": "2022-09-14",
+        "item": "Grilled Chicken Sandwich"
     },
     {
-        "date": "2022-03-11",
-        "item": "A:Cheese Pizza Slice"
+        "date": "2022-09-15",
+        "item": "Beef or Bean Burrito"
     },
     {
-        "date": "2022-03-14",
-        "item": "B:Grilled Cheese"
+        "date": "2022-09-16",
+        "item": "Spinach Meatball and Cheese Stromboli or Calzone"
     },
     {
-        "date": "2022-03-15",
-        "item": "A:Beef Tacos"
+        "date": "2022-09-19",
+        "item": "Baked Ziti with Meat Sauce"
     },
     {
-        "date": "2022-03-16",
-        "item": "B:Cheeseburger"
+        "date": "2022-09-20",
+        "item": "Barbequeue Pulled Pork on a Bun"
     },
     {
-        "date": "2022-03-17",
-        "item": "A:Chicken Nuggets"
+        "date": "2022-09-21",
+        "item": "Chicken Parmesan Sandwich"
     },
     {
-        "date": "2022-03-18",
-        "item": "B:Cheese Pizza Slice"
+        "date": "2022-09-22",
+        "item": "Turkey Nachos Grande"
     },
     {
-        "date": "2022-03-21",
-        "item": "A:Grilled Cheese"
+        "date": "2022-09-23",
+        "item": "Cheesy Stuffed Breaksticks"
     },
     {
-        "date": "2022-03-22",
-        "item": "B:French Toast Sticks"
+        "date": "2022-09-28",
+        "item": "General Tso's Chicken"
     },
     {
-        "date": "2022-03-23",
-        "item": "A:Cheeseburger"
+        "date": "2022-09-29",
+        "item": "Chicken Tenders and Waffles with Syrup"
     },
     {
-        "date": "2022-03-24",
-        "item": "B:Chicken Nuggets"
-    },
-    {
-        "date": "2022-03-25",
-        "item": "A:Cheese Pizza Slice"
-    },
-    {
-        "date": "2022-03-28",
-        "item": "B:Grilled Cheese"
-    },
-    {
-        "date": "2022-03-29",
-        "item": "A:Pizza Sticks"
-    },
-    {
-        "date": "2022-03-30",
-        "item": "B:Pizza Crunchers"
-    },
-    {
-        "date": "2022-03-31",
-        "item": "A:Chicken Nuggets"
+        "date": "2022-09-30",
+        "item": "Meatball Hero"
     }
 ]
