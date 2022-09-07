@@ -127,9 +127,9 @@ class LunchMiddleSchoolTodayIntentHandler(AbstractRequestHandler):
 
         if(lunchItem["item"].find(":") == 1):
             items = lunchItem["item"].split(":")
-            msg = "Today at Middle School is {article} {day} day, and today's lunch is {item}".format(article="an" if items[0] == "A" else "a", day=items[0], item=items[1])
+            msg = "Today at Middle and High School is {article} {day} day, and today's lunch is {item}".format(article="an" if items[0] == "A" else "a", day=items[0], item=items[1])
         else:
-            msg = "Today's lunch at Middle School is {}".format(lunchItem["item"])
+            msg = "Today's lunch at Middle and High School is {}".format(lunchItem["item"])
 
         session_attr["lunchItem"] = msg
         speech = (msg)
@@ -154,9 +154,9 @@ class LunchMiddleSchoolTomorrowIntentHandler(AbstractRequestHandler):
 
         if(lunchItem["item"].find(":") == 1):
             items = lunchItem["item"].split(":")
-            msg = "Tomorrow at Middle School will be {article} {day} day, and lunch will be {item}".format(article="an" if items[0] == "A" else "a", day=items[0], item=items[1])
+            msg = "Tomorrow at Middle and High School will be {article} {day} day, and lunch will be {item}".format(article="an" if items[0] == "A" else "a", day=items[0], item=items[1])
         else:
-            msg = "Tomorrow's lunch at Middle School will be {}".format(lunchItem["item"])
+            msg = "Tomorrow's lunch at Middle and High School will be {}".format(lunchItem["item"])
 
         session_attr["lunchItem"] = msg
         speech = (msg)
@@ -194,10 +194,10 @@ class LunchTodayIntentHandler(AbstractRequestHandler):
         if lunchItemElementary == lunchItemMiddleSchool:
             speech = ("Today's lunch at both schools are the same: {}.").format(lunchItemElementary)
         else:
-            speech = ("Today's lunch in elementary is {}, and at Middle School it is {}.").format(lunchItemElementary, lunchItemMiddleSchool)
+            speech = ("Today's lunch in elementary is {}, and at High School it is {}.").format(lunchItemElementary, lunchItemMiddleSchool)
 
         if abDay:
-            speech += " And today is {article} {day} day at Middle school.".format(article="an" if abDay == "A" else "a", day=abDay)
+            speech += " And today is {article} {day} day at Middle and High school.".format(article="an" if abDay == "A" else "a", day=abDay)
 
         session_attr["lunchItemElementary"] = lunchItemElementary
         session_attr["lunchItemMiddleSchool"] = lunchItemMiddleSchool
@@ -235,10 +235,10 @@ class LunchTomorrowIntentHandler(AbstractRequestHandler):
         if lunchItemElementary == lunchItemMiddleSchool:
             speech = ("Tomorrow's lunch at both schools are the same: {}.").format(lunchItemElementary)
         else:
-            speech = ("Tomorrow's lunch in elementary is {}, and at Middle School it is {}.").format(lunchItemElementary, lunchItemMiddleSchool)
+            speech = ("Tomorrow's lunch in elementary is {}, and at High School it is {}.").format(lunchItemElementary, lunchItemMiddleSchool)
 
         if abDay:
-            speech += " And tomorrow will be {article} {day} day at Middle school.".format(article="an" if abDay == "A" else "a", day=abDay)
+            speech += " And tomorrow will be {article} {day} day at Middle and High school.".format(article="an" if abDay == "A" else "a", day=abDay)
 
         session_attr["lunchItemElementary"] = lunchItemElementary
         session_attr["lunchItemMiddleSchool"] = lunchItemMiddleSchool
