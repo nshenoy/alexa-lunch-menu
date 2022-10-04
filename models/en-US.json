@@ -101,6 +101,22 @@
                     ]
                 },
                 {
+                    "name": "LunchPortledgeTodayIntent",
+                    "slots": [],
+                    "samples": [
+                        "what's for lunch today at portledge",
+                        "what's for lunch at portledge today"
+                    ]
+                },
+                {
+                    "name": "LunchPortledgeTomorrowIntent",
+                    "slots": [],
+                    "samples": [
+                        "what's for lunch tomorrow at portledge",
+                        "what's for lunch at portledge today"
+                    ]
+                },
+                {
                     "name": "LunchTodayIntent",
                     "slots": [],
                     "samples": [

@@ -164,6 +164,51 @@ class LunchMiddleSchoolTomorrowIntentHandler(AbstractRequestHandler):
         handler_input.response_builder.speak(speech)
         return handler_input.response_builder.response
 
+class LunchPortledgeTodayIntentHandler(AbstractRequestHandler):
+    """Handler for Lunch Portledge Today intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return is_intent_name("LunchPortledgeTodayIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        logger.info("In LunchPortledgeTodayIntentHandler")
+
+        attribute_manager = handler_input.attributes_manager
+        session_attr = attribute_manager.session_attributes
+
+        lunchItem = util.get_lunch_for_today(data.LUNCHMENU_DATA_PORTLEDGE)
+
+        msg = "Today's lunch at Portledge is {}".format(lunchItem["item"])
+
+        session_attr["lunchItem"] = msg
+        speech = (msg)
+
+        handler_input.response_builder.speak(speech)
+        return handler_input.response_builder.response
+
+class LunchPortledgeTomorrowIntentHandler(AbstractRequestHandler):
+    """Handler for Lunch Portledge Tomorrow intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return is_intent_name("LunchPortledgeTomorrowIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        logger.info("In LunchPortledgeTomorrowIntentHandler")
+
+        attribute_manager = handler_input.attributes_manager
+        session_attr = attribute_manager.session_attributes
+
+        lunchItem = util.get_lunch_for_tomorrow(data.LUNCHMENU_DATA_PORTLEDGE)
+
+        msg = "Tomorrow's lunch at Portledge will be {}".format(lunchItem["item"])
+
+        session_attr["lunchItem"] = msg
+        speech = (msg)
+
+        handler_input.response_builder.speak(speech)
+        return handler_input.response_builder.response
 
 class LunchTodayIntentHandler(AbstractRequestHandler):
     """Handler for Lunch Today intent."""
@@ -419,6 +464,8 @@ sb.add_request_handler(LunchElementaryTodayIntentHandler())
 sb.add_request_handler(LunchElementaryTomorrowIntentHandler())
 sb.add_request_handler(LunchMiddleSchoolTodayIntentHandler())
 sb.add_request_handler(LunchMiddleSchoolTomorrowIntentHandler())
+sb.add_request_handler(LunchPortledgeTodayIntentHandler())
+sb.add_request_handler(LunchPortledgeTomorrowIntentHandler())
 sb.add_request_handler(ABDayTodayIntentHandler())
 sb.add_request_handler(ABDayTomorrowIntentHandler())
 sb.add_request_handler(HelpIntentHandler())
