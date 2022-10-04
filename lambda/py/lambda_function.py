@@ -180,6 +180,7 @@ class LunchTodayIntentHandler(AbstractRequestHandler):
 
         lunchItemElementaryRaw = util.get_lunch_for_today(data.LUNCHMENU_DATA_ELEMENTARY)
         lunchItemMiddleSchoolRaw = util.get_lunch_for_today(data.LUNCHMENU_DATA_MIDDLESCHOOL)
+        lunchItemPortledgeRaw = util.get_lunch_for_today(data.LUNCHMENU_DATA_PORTLEDGE)
 
         abDay = ""
         if(lunchItemMiddleSchoolRaw["item"].find(":") == 1):
@@ -191,10 +192,15 @@ class LunchTodayIntentHandler(AbstractRequestHandler):
 
         lunchItemElementary = lunchItemElementaryRaw["item"]
 
+        lunchItemPortledge = lunchItemPortledgeRaw["item"]
+
         if lunchItemElementary == lunchItemMiddleSchool:
             speech = ("Today's lunch at both schools are the same: {}.").format(lunchItemElementary)
         else:
             speech = ("Today's lunch in elementary is {}, and at High School it is {}.").format(lunchItemElementary, lunchItemMiddleSchool)
+
+        if lunchItemPortledge is not None:
+            speech += (" At Portledge today's lunch is {}.").format(lunchItemPortledge)
 
         if abDay:
             speech += " And today is {article} {day} day at Middle and High school.".format(article="an" if abDay == "A" else "a", day=abDay)
@@ -221,6 +227,7 @@ class LunchTomorrowIntentHandler(AbstractRequestHandler):
 
         lunchItemElementaryRaw = util.get_lunch_for_tomorrow(data.LUNCHMENU_DATA_ELEMENTARY)
         lunchItemMiddleSchoolRaw = util.get_lunch_for_tomorrow(data.LUNCHMENU_DATA_MIDDLESCHOOL)
+        lunchItemPortledgeRaw = util.get_lunch_for_tomorrow(data.LUNCHMENU_DATA_PORTLEDGE)
 
         abDay = ""
         if(lunchItemMiddleSchoolRaw["item"].find(":") == 1):
@@ -232,10 +239,15 @@ class LunchTomorrowIntentHandler(AbstractRequestHandler):
 
         lunchItemElementary = lunchItemElementaryRaw["item"]
 
+        lunchItemPortledge = lunchItemPortledgeRaw["item"]
+
         if lunchItemElementary == lunchItemMiddleSchool:
             speech = ("Tomorrow's lunch at both schools are the same: {}.").format(lunchItemElementary)
         else:
             speech = ("Tomorrow's lunch in elementary is {}, and at High School it is {}.").format(lunchItemElementary, lunchItemMiddleSchool)
+
+        if lunchItemPortledge is not None:
+            speech += (" At Portledge tomorrow's lunch is {}.").format(lunchItemPortledge)
 
         if abDay:
             speech += " And tomorrow will be {article} {day} day at Middle and High school.".format(article="an" if abDay == "A" else "a", day=abDay)

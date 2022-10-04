@@ -11,152 +11,178 @@ ABOUT = _("I'll tell you what's for lunch today or tomorrow in Locust Valley Ele
 STOP = _("Okay, see you next time!")
 FALLBACK = _("The {} can't help you with that.")
 GENERIC_REPROMPT = _("What can I help you with?")
-LUNCHMENU = "September2022"
+LUNCHMENU = "October2022"
 LUNCHMENU_DATA_ELEMENTARY = [
     {
-        "date": "2022-09-01",
-        "item": "Hamburger or Cheeseburger"
+        "date": "2022-10-03",
+        "item": "Grilled Cheese"
     },
     {
-        "date": "2022-09-06",
-        "item": "Cinnamon French Toast Sticks"
+        "date": "2022-10-04",
+        "item": "Tacos"
     },
     {
-        "date": "2022-09-07",
-        "item": "Pasta Day. Plain pasta with butter or meatballs and marinara sauce."
+        "date": "2022-10-06",
+        "item": "Breaded Chicked Bites"
     },
     {
-        "date": "2022-09-08",
-        "item": "Turkey Nachos Grande"
-    },
-    {
-        "date": "2022-09-09",
+        "date": "2022-10-07",
         "item": "Cheese or Pepperoni Pizza"
     },
     {
-        "date": "2022-09-12",
+        "date": "2022-10-11",
+        "item": "Cinnamon French Toast Sticks"
+    },
+    {
+        "date": "2022-10-12",
+        "item": "Meatball Parmigiana Hero"
+    },
+    {
+        "date": "2022-10-13",
+        "item": "Breaded Chicken Patty on a Bun"
+    },
+    {
+        "date": "2022-10-14",
+        "item": "Pizza Crunchers"
+    },
+    {
+        "date": "2022-10-17",
+        "item": "Homemade Macaroni and Cheese"
+    },
+    {
+        "date": "2022-10-18",
+        "item": "Waffles with Syrup Turkey Sausage"
+    },
+    {
+        "date": "2022-10-19",
+        "item": "Cheeseburger on a Bun"
+    },
+    {
+        "date": "2022-10-20",
+        "item": "All Beef Hot Dog on a Bun"
+    },
+    {
+        "date": "2022-10-21",
+        "item": "Cheese or Pepperoni Pizza"
+    },
+    {
+        "date": "2022-10-24",
         "item": "Breaded Chicken Tenders"
     },
     {
-        "date": "2022-09-13",
-        "item": "Pancakes with Syrup"
-    },
-    {
-        "date": "2022-09-14",
-        "item": "Hot Dog or Hamburger"
-    },
-    {
-        "date": "2022-09-15",
-        "item": "Macaroni and Cheese"
-    },
-    {
-        "date": "2022-09-16",
-        "item": "Cheese or Pepperoni Pizza"
-    },
-    {
-        "date": "2022-09-19",
-        "item": "Breaded Chicken Bites"
-    },
-    {
-        "date": "2022-09-20",
+        "date": "2022-10-25",
         "item": "Cinnamon French Toast Sticks"
     },
     {
-        "date": "2022-09-21",
-        "item": "Cheesy Stuffed Breadsticks with Marinara Sauce"
+        "date": "2022-10-26",
+        "item": "Pizza Bagels"
     },
     {
-        "date": "2022-09-22",
-        "item": "Turkey Nachos Grande"
+        "date": "2022-10-27",
+        "item": "Nachos"
     },
     {
-        "date": "2022-09-23",
-        "item": "Cheese or Pepperoni Pizza"
+        "date": "2022-10-28",
+        "item": "Pizza Sticks with Marinara Sauce"
     },
     {
-        "date": "2022-09-28",
-        "item": "Chicken Tenders and Waffles with Syrup"
-    },
-    {
-        "date": "2022-09-29",
-        "item": "Baked Mozarella Sticks"
-    },
-    {
-        "date": "2022-09-30",
-        "item": "Cheese or Pepperoni Pizza"
+        "date": "2022-10-30",
+        "item": "All Beef Hot Dog on a Bun"
     }
 ]
 LUNCHMENU_DATA_MIDDLESCHOOL = [
     {
-        "date": "2022-09-01",
-        "item": "Bacon Cheeseburger"
-    },
-    {
-        "date": "2022-09-06",
+        "date": "2022-10-03",
         "item": "Cinnamon French Toast Sticks"
     },
     {
-        "date": "2022-09-07",
-        "item": "Pasta Day. Plain pasta with butter or meatballs and marinara sauce."
+        "date": "2022-10-04",
+        "item": "Tacos"
     },
     {
-        "date": "2022-09-08",
-        "item": "Turkey Nachos Grande"
+        "date": "2022-10-06",
+        "item": "Breaded Chicked Bites"
     },
     {
-        "date": "2022-09-09",
-        "item": "Italian Sausage and Peppers Hero"
+        "date": "2022-10-07",
+        "item": "Meatball Pomodoro Bowl"
     },
     {
-        "date": "2022-09-12",
-        "item": "Breaded Chicken Tenders"
+        "date": "2022-10-11",
+        "item": "Dutch Waffles with Syrup"
     },
     {
-        "date": "2022-09-13",
-        "item": "Chili or Buffalo Chicken"
+        "date": "2022-10-12",
+        "item": "Chicken Lo Mein"
     },
     {
-        "date": "2022-09-14",
-        "item": "Grilled Chicken Sandwich"
+        "date": "2022-10-13",
+        "item": "Hamburger or Cheeseburger with Bacon on a Bun"
     },
     {
-        "date": "2022-09-15",
-        "item": "Beef or Bean Burrito"
+        "date": "2022-10-14",
+        "item": "Country Chicken Bowl"
     },
     {
-        "date": "2022-09-16",
-        "item": "Spinach Meatball and Cheese Stromboli or Calzone"
+        "date": "2022-10-17",
+        "item": "Spaghetti Carbonara with Chicken"
     },
     {
-        "date": "2022-09-19",
-        "item": "Baked Ziti with Meat Sauce"
+        "date": "2022-10-18",
+        "item": "Cinnamon French Toast Sticks"
     },
     {
-        "date": "2022-09-20",
-        "item": "Barbequeue Pulled Pork on a Bun"
+        "date": "2022-10-19",
+        "item": "Burrito Bar"
     },
     {
-        "date": "2022-09-21",
-        "item": "Chicken Parmesan Sandwich"
+        "date": "2022-10-20",
+        "item": "Baked Potato Bar"
     },
     {
-        "date": "2022-09-22",
-        "item": "Turkey Nachos Grande"
+        "date": "2022-10-21",
+        "item": "Chicken Teriyaki"
     },
     {
-        "date": "2022-09-23",
-        "item": "Cheesy Stuffed Breaksticks"
+        "date": "2022-10-24",
+        "item": "Chicken Parmesan"
     },
     {
-        "date": "2022-09-28",
-        "item": "General Tso's Chicken"
+        "date": "2022-10-25",
+        "item": "Taco Rice Bowl"
     },
     {
-        "date": "2022-09-29",
-        "item": "Chicken Tenders and Waffles with Syrup"
+        "date": "2022-10-26",
+        "item": "Baked Cheese Ravioli in Tomato Sauce"
     },
     {
-        "date": "2022-09-30",
-        "item": "Meatball Hero"
+        "date": "2022-10-27",
+        "item": "Chicken Waffle Sandwich"
+    },
+    {
+        "date": "2022-10-28",
+        "item": "Chicken Stromboli"
+    },
+    {
+        "date": "2022-10-30",
+        "item": "Homemade Macaroni and Cheese"
+    }
+]
+LUNCHMENU_DATA_PORTLEDGE = [
+    {
+        "date": "2022-10-03",
+        "item": "Pasta Bar"
+    },
+    {
+        "date": "2022-10-04",
+        "item": "Lo Mein Bar"
+    },
+    {
+        "date": "2022-10-06",
+        "item": "Baked Ziti"
+    },
+    {
+        "date": "2022-10-07",
+        "item": "Baked Potato Bar"
     }
 ]
