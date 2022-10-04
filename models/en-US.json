@@ -89,7 +89,9 @@
                     "slots": [],
                     "samples": [
                         "what's for lunch today at middle school",
-                        "what's for lunch at middle school today"
+                        "what's for lunch at middle school today",
+                        "what's for lunch today at high school",
+                        "what's for lunch at high school today"
                     ]
                 },
                 {
@@ -97,7 +99,9 @@
                     "slots": [],
                     "samples": [
                         "what's for lunch tomorrow at middle school",
-                        "what's for lunch at middle school tomorrow"
+                        "what's for lunch at middle school tomorrow",
+                        "what's for lunch tomorrow at high school",
+                        "what's for lunch at high school tomorrow"
                     ]
                 },
                 {
@@ -113,7 +117,7 @@
                     "slots": [],
                     "samples": [
                         "what's for lunch tomorrow at portledge",
-                        "what's for lunch at portledge today"
+                        "what's for lunch at portledge tomorrow"
                     ]
                 },
                 {
