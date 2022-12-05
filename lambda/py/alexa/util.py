@@ -13,7 +13,7 @@ def get_lunch(lunch_data, menuDate):
             return lunchItem
 
     if menuDate.weekday() < 5:
-        return {"item": "NOTHING because it is a holiday!"}
+        return {"item": "not found because there's no data."}
     else:
         return {"item": "NOTHING because it is the weekend!"}        
 
