@@ -164,6 +164,51 @@ class LunchMiddleSchoolTomorrowIntentHandler(AbstractRequestHandler):
         handler_input.response_builder.speak(speech)
         return handler_input.response_builder.response
 
+class LunchPortledgeTodayIntentHandler(AbstractRequestHandler):
+    """Handler for Lunch Portledge Today intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return is_intent_name("LunchPortledgeTodayIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        logger.info("In LunchPortledgeTodayIntentHandler")
+
+        attribute_manager = handler_input.attributes_manager
+        session_attr = attribute_manager.session_attributes
+
+        lunchItem = util.get_lunch_for_today(data.LUNCHMENU_DATA_PORTLEDGE)
+
+        msg = "Today's lunch at Portledge is {}".format(lunchItem["item"])
+
+        session_attr["lunchItem"] = msg
+        speech = (msg)
+
+        handler_input.response_builder.speak(speech)
+        return handler_input.response_builder.response
+
+class LunchPortledgeTomorrowIntentHandler(AbstractRequestHandler):
+    """Handler for Lunch Portledge Tomorrow intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return is_intent_name("LunchPortledgeTomorrowIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        logger.info("In LunchPortledgeTomorrowIntentHandler")
+
+        attribute_manager = handler_input.attributes_manager
+        session_attr = attribute_manager.session_attributes
+
+        lunchItem = util.get_lunch_for_tomorrow(data.LUNCHMENU_DATA_PORTLEDGE)
+
+        msg = "Tomorrow's lunch at Portledge will be {}".format(lunchItem["item"])
+
+        session_attr["lunchItem"] = msg
+        speech = (msg)
+
+        handler_input.response_builder.speak(speech)
+        return handler_input.response_builder.response
 
 class LunchTodayIntentHandler(AbstractRequestHandler):
     """Handler for Lunch Today intent."""
@@ -180,6 +225,7 @@ class LunchTodayIntentHandler(AbstractRequestHandler):
 
         lunchItemElementaryRaw = util.get_lunch_for_today(data.LUNCHMENU_DATA_ELEMENTARY)
         lunchItemMiddleSchoolRaw = util.get_lunch_for_today(data.LUNCHMENU_DATA_MIDDLESCHOOL)
+        lunchItemPortledgeRaw = util.get_lunch_for_today(data.LUNCHMENU_DATA_PORTLEDGE)
 
         abDay = ""
         if(lunchItemMiddleSchoolRaw["item"].find(":") == 1):
@@ -191,10 +237,15 @@ class LunchTodayIntentHandler(AbstractRequestHandler):
 
         lunchItemElementary = lunchItemElementaryRaw["item"]
 
+        lunchItemPortledge = lunchItemPortledgeRaw["item"]
+
         if lunchItemElementary == lunchItemMiddleSchool:
             speech = ("Today's lunch at both schools are the same: {}.").format(lunchItemElementary)
         else:
             speech = ("Today's lunch in elementary is {}, and at High School it is {}.").format(lunchItemElementary, lunchItemMiddleSchool)
+
+        if lunchItemPortledge is not None:
+            speech += (" At Portledge today's lunch is {}.").format(lunchItemPortledge)
 
         if abDay:
             speech += " And today is {article} {day} day at Middle and High school.".format(article="an" if abDay == "A" else "a", day=abDay)
@@ -221,6 +272,7 @@ class LunchTomorrowIntentHandler(AbstractRequestHandler):
 
         lunchItemElementaryRaw = util.get_lunch_for_tomorrow(data.LUNCHMENU_DATA_ELEMENTARY)
         lunchItemMiddleSchoolRaw = util.get_lunch_for_tomorrow(data.LUNCHMENU_DATA_MIDDLESCHOOL)
+        lunchItemPortledgeRaw = util.get_lunch_for_tomorrow(data.LUNCHMENU_DATA_PORTLEDGE)
 
         abDay = ""
         if(lunchItemMiddleSchoolRaw["item"].find(":") == 1):
@@ -232,10 +284,15 @@ class LunchTomorrowIntentHandler(AbstractRequestHandler):
 
         lunchItemElementary = lunchItemElementaryRaw["item"]
 
+        lunchItemPortledge = lunchItemPortledgeRaw["item"]
+
         if lunchItemElementary == lunchItemMiddleSchool:
             speech = ("Tomorrow's lunch at both schools are the same: {}.").format(lunchItemElementary)
         else:
             speech = ("Tomorrow's lunch in elementary is {}, and at High School it is {}.").format(lunchItemElementary, lunchItemMiddleSchool)
+
+        if lunchItemPortledge is not None:
+            speech += (" At Portledge tomorrow's lunch is {}.").format(lunchItemPortledge)
 
         if abDay:
             speech += " And tomorrow will be {article} {day} day at Middle and High school.".format(article="an" if abDay == "A" else "a", day=abDay)
@@ -407,6 +464,8 @@ sb.add_request_handler(LunchElementaryTodayIntentHandler())
 sb.add_request_handler(LunchElementaryTomorrowIntentHandler())
 sb.add_request_handler(LunchMiddleSchoolTodayIntentHandler())
 sb.add_request_handler(LunchMiddleSchoolTomorrowIntentHandler())
+sb.add_request_handler(LunchPortledgeTodayIntentHandler())
+sb.add_request_handler(LunchPortledgeTomorrowIntentHandler())
 sb.add_request_handler(ABDayTodayIntentHandler())
 sb.add_request_handler(ABDayTomorrowIntentHandler())
 sb.add_request_handler(HelpIntentHandler())
