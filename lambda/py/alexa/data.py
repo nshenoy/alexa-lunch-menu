@@ -11,141 +11,169 @@ ABOUT = _("I'll tell you what's for lunch today or tomorrow in Locust Valley Ele
 STOP = _("Okay, see you next time!")
 FALLBACK = _("The {} can't help you with that.")
 GENERIC_REPROMPT = _("What can I help you with?")
-LUNCHMENU = "December2022"
+LUNCHMENU = "January2022"
 LUNCHMENU_DATA_ELEMENTARY = [
     {
-        "date": "2022-12-01",
-        "item": "Breaded Chicken Tenders"
+        "date": "2023-01-03",
+        "item": "Dutch Waffles with Syrup"
     },
     {
-        "date": "2022-12-05",
-        "item": "Turkey Nachos"
-    },
-    {
-        "date": "2022-12-06",
-        "item": "Cinnamon French Toast Sticks"
-    },
-    {
-        "date": "2022-12-07",
-        "item": "Chicken Rice Soup with Grilled Cheese"
-    },
-    {
-        "date": "2022-12-08",
-        "item": "Breaded Mozarella Sticks"
-    },
-    {
-        "date": "2022-12-09",
-        "item": "Cheese or Pepperoni Pizza"
-    },
-    {
-        "date": "2022-12-12",
-        "item": "Breaded Chicken Patty on a Bun"
-    },
-    {
-        "date": "2022-12-13",
-        "item": "Waffles with Syrup"
-    },
-    {
-        "date": "2022-12-14",
-        "item": "Tomato Soup with Grilled Cheese"
-    },
-    {
-        "date": "2022-12-15",
-        "item": "Cheeseburger"
-    },
-    {
-        "date": "2022-12-16",
-        "item": "Cheese or Pepperoni Pizza"
-    },
-    {
-        "date": "2022-12-19",
+        "date": "2023-01-04",
         "item": "Breaded Chicken Bites"
     },
     {
-        "date": "2022-12-20",
-        "item": "Cinnamon French Toast Sticks"
-    },
-    {
-        "date": "2022-12-21",
-        "item": "Pizza Crunchers"
-    },
-    {
-        "date": "2022-12-22",
+        "date": "2023-01-05",
         "item": "Chicken Rice Soup with Grilled Cheese"
     },
     {
-        "date": "2022-12-23",
+        "date": "2023-01-06",
         "item": "Cheese or Pepperoni Pizza"
+    },
+    {
+        "date": "2023-01-09",
+        "item": "Breaded Chicken Patty Parmesan on a Bun"
+    },
+    {
+        "date": "2023-01-10",
+        "item": "Pancakes with turkey sausage patty"
+    },
+    {
+        "date": "2023-01-11",
+        "item": "Tomato Soup with Grilled Cheese"
+    },
+    {
+        "date": "2023-01-12",
+        "item": "Taco Rice Bowl"
+    },
+    {
+        "date": "2023-01-13",
+        "item": "Cheese or Pepperoni Pizza"
+    },
+    {
+        "date": "2023-01-17",
+        "item": "Cinnamon French Toast Sticks"
+    },
+    {
+        "date": "2023-01-18",
+        "item": "Pasta with Alfredo Sauce"
+    },
+    {
+        "date": "2023-01-19",
+        "item": "Chicken Noodle Soup with Grilled Cheese"
+    },
+    {
+        "date": "2023-01-20",
+        "item": "Cheese or Pepperoni Pizza"
+    },
+    {
+        "date": "2023-01-23",
+        "item": "Breaded Chicken Tenders"
+    },
+    {
+        "date": "2023-01-24",
+        "item": "Dutch Waffles with Syrup"
+    },
+        {
+        "date": "2023-01-25",
+        "item": "Homemade Macaroni and Cheese"
+    },
+    {
+        "date": "2023-01-26",
+        "item": "Chicken Rice Soup with Grilled Cheese"
+    },
+    {
+        "date": "2023-01-27",
+        "item": "Cheese or Pepperoni Pizza"
+    },
+    {
+        "date": "2023-01-30",
+        "item": "Meatball Parmesan on a Bun"
+    },
+    {
+        "date": "2023-01-31",
+        "item": "Cinnamon French Toast Sticks"
     }
 ]
 LUNCHMENU_DATA_MIDDLESCHOOL = [
     {
-        "date": "2022-12-01",
+        "date": "2023-01-03",
         "item": "Breaded Chicken Tenders"
     },
     {
-        "date": "2022-12-02",
-        "item": "Baked Cheese Ravioli"
+        "date": "2023-01-04",
+        "item": "Beef Taco Totcho Bowl"
     },
     {
-        "date": "2022-12-05",
+        "date": "2023-01-05",
+        "item": "Chicken Noodle Soup with Grilled Cheese"
+    },
+    {
+        "date": "2023-01-06",
+        "item": "Baked Ziti"
+    },
+    {
+        "date": "2023-01-09",
         "item": "Cinnamon French Toast Sticks"
     },
     {
-        "date": "2022-12-06",
-        "item": "Taco Rice Bowl"
+        "date": "2023-01-10",
+        "item": "Beef or Bean Burrito"
     },
     {
-        "date": "2022-12-07",
-        "item": "Breaded Chicken Patty on a Bun"
+        "date": "2023-01-11",
+        "item": "Oven Roasted Chicken"
     },
     {
-        "date": "2022-12-08",
-        "item": "Beef Chili "
-    },
-    {
-        "date": "2022-12-09",
-        "item": "Sausage and Peppers on a plate or hero"
-    },
-    {
-        "date": "2022-12-12",
-        "item": "Hamburger or Cheeseburger on a bun"
-    },
-    {
-        "date": "2022-12-13",
-        "item": "Waffles with Syrup"
-    },
-    {
-        "date": "2022-12-14",
-        "item": "Buffalo Chicken Meatball Mac & Cheese Bowl"
-    },
-    {
-        "date": "2022-12-15",
-        "item": "Chicken Rice Soup with Grilled Cheese"
-    },
-    {
-        "date": "2022-12-16",
-        "item": "Chicken Teriyaki"
-    },
-    {
-        "date": "2022-12-19",
-        "item": "Homemade Macaroni and Cheese"
-    },
-    {
-        "date": "2022-12-20",
-        "item": "Breaded Chicken Tenders"
-    },
-    {
-        "date": "2022-12-21",
-        "item": "Taco Rice Bowl"
-    },
-    {
-        "date": "2022-12-22",
+        "date": "2023-01-12",
         "item": "Tomato Soup with Grilled Cheese"
     },
     {
-        "date": "2022-12-23",
-        "item": "Breaded Chicken Parmesan on a Bun"
+        "date": "2023-01-13",
+        "item": "Homemade Macaroni and Cheese"
+    },
+    {
+        "date": "2023-01-17",
+        "item": "Pancakes with turkey sausage patty"
+    },
+    {
+        "date": "2023-01-18",
+        "item": "Breaded Chicken Patty Parmesan on a Bun"
+    },
+    {
+        "date": "2023-01-19",
+        "item": "Chicken Rice Soup with Grilled Cheese"
+    },
+    {
+        "date": "2023-01-20",
+        "item": "Pasta with Tomato Sauce and Meatballs"
+    },
+    {
+        "date": "2023-01-23",
+        "item": "Breaded Chicken Tenders"
+    },
+    {
+        "date": "2023-01-24",
+        "item": "Taco Rice Bowl"
+    },
+        {
+        "date": "2023-01-25",
+        "item": "Bacon Cheeseburger on a Bun"
+    },
+    {
+        "date": "2023-01-26",
+        "item": "Tomato Soup with Grilled Cheese"
+    },
+    {
+        "date": "2023-01-27",
+        "item": "Baked Mozzarella Sticks"
+    },
+    {
+        "date": "2023-01-30",
+        "item": "Meatball Parmesan on a Bun"
+    },
+    {
+        "date": "2023-01-31",
+        "item": "Cinnamon French Toast Sticks"
     }
 ]
 
