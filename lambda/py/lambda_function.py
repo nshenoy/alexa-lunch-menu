@@ -244,8 +244,8 @@ class LunchTodayIntentHandler(AbstractRequestHandler):
         else:
             speech = ("Today's lunch in elementary is {}, and at High School it is {}.").format(lunchItemElementary, lunchItemMiddleSchool)
 
-        if lunchItemPortledge is not None:
-            speech += (" At Portledge today's lunch is {}.").format(lunchItemPortledge)
+        # if lunchItemPortledge is not None:
+        #     speech += (" At Portledge today's lunch is {}.").format(lunchItemPortledge)
 
         if abDay:
             speech += " And today is {article} {day} day at Middle and High school.".format(article="an" if abDay == "A" else "a", day=abDay)
@@ -291,8 +291,8 @@ class LunchTomorrowIntentHandler(AbstractRequestHandler):
         else:
             speech = ("Tomorrow's lunch in elementary is {}, and at High School it is {}.").format(lunchItemElementary, lunchItemMiddleSchool)
 
-        if lunchItemPortledge is not None:
-            speech += (" At Portledge tomorrow's lunch is {}.").format(lunchItemPortledge)
+        # if lunchItemPortledge is not None:
+        #     speech += (" At Portledge tomorrow's lunch is {}.").format(lunchItemPortledge)
 
         if abDay:
             speech += " And tomorrow will be {article} {day} day at Middle and High school.".format(article="an" if abDay == "A" else "a", day=abDay)
